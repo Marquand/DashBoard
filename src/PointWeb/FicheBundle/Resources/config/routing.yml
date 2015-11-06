@@ -1,0 +1,11 @@
+point_web_fiche_admin_frais:
+    resource: "@PointWebFicheBundle/Resources/config/routing/frais.yml"
+    prefix:   /Fiche/admin
+
+point_web_fiche_homepage:
+    path:     /Fiche
+    defaults: { _controller: PointWebFicheBundle:Default:index }
+
+point_web_fiche_detail:
+    path:     /Fiche/detail
+    defaults: { _controller: PointWebFicheBundle:Default:detail }

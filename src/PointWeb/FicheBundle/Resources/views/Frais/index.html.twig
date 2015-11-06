@@ -1,0 +1,63 @@
+{% extends 'PointWebFicheBundle::base.html.twig' %}
+{% block content %}
+    <h1>Frais list</h1>
+    <div class="col-lg-12 table-responsive">
+    <table class="records_list table table-bordered table-hover table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre de nuit</th>
+                <th>Nombre de repas </th>
+                <th>Nombre de Kilomètre</th>
+                <th>Prix de la nuité</th>
+                <th>Prix du repas</th>
+                <th>Prix de l'essence</th>
+                <th>Total nuité</th>
+                <th>Total repas</th>
+                <th>Total Kilomètrage</th>
+                <th>Total</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('admin_frais_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.qtNuit }}</td>
+                <td>{{ entity.qtRepas }}</td>
+                <td>{{ entity.qtKm }}</td>
+                <td>{{ entity.prixNuit }}</td>
+                <td>{{ entity.prixRepas }}</td>
+                <td>{{ entity.prixKm }}</td>
+                <td>{{ entity.totalNuit }}</td>
+                <td>{{ entity.totalRepas }}</td>
+                <td>{{ entity.totalKm }}</td>
+                <td>{{ entity.total }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('admin_frais_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('admin_frais_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    </div>
+    <hr class="clear">
+
+        <ul>
+        <li>
+            <a type="btn" href="{{ path('admin_frais_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+
+
+    {% endblock %}

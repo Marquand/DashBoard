@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <title>{{ app.request.get('_route')|getRef('title') }}</title>
+    <meta name="description" content="{{ app.request.get('_route')|getRef('description') }}"/>
+    <meta name="keywords" content="{{ app.request.get('_route')|getRef('keywords') }}"/>
+
+
+
+    <script src="{{ asset('js/jserror.js') }}"></script>
+    <script src="{{ asset('js/antispam.js') }}"></script>
+
+    <script src="{{ asset('js/app.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}" media="all"/>
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ asset('css/css/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="{{ asset('css/css/sb-admin.css') }}" rel="stylesheet">
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css{{ asset('css/css/plugins/morris.css') }}" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <script src="{{ asset('js/js/jquery.js') }}"></script>
+
+    <script src="{{ asset('js/js/bootstrap.min.js') }}"></script>
+    <!-- Bootstrap Core JavaScript -->
+
+    <!-- Morris Charts JavaScript -->
+    <script src="{{ asset('js/js/plugins/morris/raphael.min.js') }}"></script>
+    <script src="{{ asset('js/js/plugins/morris/morris.min.js') }}"></script>
+    <script src="{{ asset('js/js/plugins/morris/morris-data.js') }}"></script>
+
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+    <!--[if IE]>
+    <style media="screen">
+        .myhr{margin:-0.45em 0}
+    </style>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <meta http-equiv="imagetoolbar" content="no" />
+    <![endif]-->
+
+    <script type="application/x-javascript"> addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        } </script>
+
+</head>
+<body>
+
+{% block body %}
+
+        {% block header %}
+            {% include 'PointWebFicheBundle::_nav.html.twig' %}
+        {% endblock %}
+        <h1 title="{{ app.request.get('_route')|getRef('h1Title') }}">{{ app.request.get('_route')|getRef('h1') }}</h1>
+
+    <div id="page-wrapper">
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">
+                        Dashboard <small>Statistics Overview</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li class="active">
+                            <i class="fa fa-dashboard"></i> Dashboard
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+        {% block content %}
+
+        {% endblock %}
+
+    {% endblock %}
+
+    <div id="scrollToTop"><a href="#">&#9650;</a></div>
+
+
+
+    </div>
+    <!-- /.container-fluid -->
+</div>
+<!-- /#page-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+    {% block javascripts %}
+    {% endblock %}
+</body>
+</html>

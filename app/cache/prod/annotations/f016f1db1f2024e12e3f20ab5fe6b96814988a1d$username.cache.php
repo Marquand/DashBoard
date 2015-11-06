@@ -1,0 +1,1 @@
+<?php return unserialize('a:1:{i:0;O:45:"Symfony\\Component\\Validator\\Constraints\\Regex":6:{s:7:"message";s:97:"Le nom d\'utilisateur ne peut contenir que des majuscules/minuscules et des chiffres, sans espaces";s:7:"pattern";s:13:"/[a-zA-Z0-9]/";s:11:"htmlPattern";N;s:5:"match";b:1;s:7:"payload";N;s:6:"groups";a:1:{i:0;s:7:"Default";}}}');
