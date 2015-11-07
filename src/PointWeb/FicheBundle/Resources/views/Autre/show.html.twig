@@ -1,0 +1,42 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Autre</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Commercial</th>
+                <td>{{ entity.commercial }}</td>
+            </tr>
+            <tr>
+                <th>Debutdate</th>
+                <td>{{ entity.debutDate|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Findate</th>
+                <td>{{ entity.finDate|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Creationdate</th>
+                <td>{{ entity.creationDate|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Justificatif</th>
+                <td>{{ entity.justificatif }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('autre') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock %}

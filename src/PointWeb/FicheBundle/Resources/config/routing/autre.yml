@@ -1,0 +1,10 @@
+autre:
+    path:     /
+    defaults: { _controller: "PointWebFicheBundle:Autre:index" }
+
+autre_show:
+    path:     /{id}/show
+    defaults: { _controller: "PointWebFicheBundle:Autre:show" }
+
+
+

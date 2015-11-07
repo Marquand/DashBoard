@@ -1,0 +1,39 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Autre list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Commercial</th>
+                <th>Debutdate</th>
+                <th>Findate</th>
+                <th>Creationdate</th>
+                <th>Justificatif</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('autre_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.commercial }}</td>
+                <td>{% if entity.debutDate %}{{ entity.debutDate|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.finDate %}{{ entity.finDate|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.creationDate %}{{ entity.creationDate|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.justificatif }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('autre_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    {% endblock %}
