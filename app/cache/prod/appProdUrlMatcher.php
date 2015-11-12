@@ -27,6 +27,66 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
         $context = $this->context;
         $request = $this->request;
 
+        if (0 === strpos($pathinfo, '/autre')) {
+            // autre
+            if (rtrim($pathinfo, '/') === '/autre') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'autre');
+                }
+
+                return array (  '_controller' => 'PointWeb\\FicheBundle\\Controller\\AutreController::indexAction',  '_route' => 'autre',);
+            }
+
+            // autre_show
+            if (preg_match('#^/autre/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'autre_show')), array (  '_controller' => 'PointWeb\\FicheBundle\\Controller\\AutreController::showAction',));
+            }
+
+            // autre_new
+            if ($pathinfo === '/autre/new') {
+                return array (  '_controller' => 'PointWeb\\FicheBundle\\Controller\\AutreController::newAction',  '_route' => 'autre_new',);
+            }
+
+            // autre_create
+            if ($pathinfo === '/autre/create') {
+                if ($this->context->getMethod() != 'POST') {
+                    $allow[] = 'POST';
+                    goto not_autre_create;
+                }
+
+                return array (  '_controller' => 'PointWeb\\FicheBundle\\Controller\\AutreController::createAction',  '_route' => 'autre_create',);
+            }
+            not_autre_create:
+
+            // autre_edit
+            if (preg_match('#^/autre/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'autre_edit')), array (  '_controller' => 'PointWeb\\FicheBundle\\Controller\\AutreController::editAction',));
+            }
+
+            // autre_update
+            if (preg_match('#^/autre/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
+                    $allow = array_merge($allow, array('POST', 'PUT'));
+                    goto not_autre_update;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'autre_update')), array (  '_controller' => 'PointWeb\\FicheBundle\\Controller\\AutreController::updateAction',));
+            }
+            not_autre_update:
+
+            // autre_delete
+            if (preg_match('#^/autre/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
+                    $allow = array_merge($allow, array('POST', 'DELETE'));
+                    goto not_autre_delete;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'autre_delete')), array (  '_controller' => 'PointWeb\\FicheBundle\\Controller\\AutreController::deleteAction',));
+            }
+            not_autre_delete:
+
+        }
+
         if (0 === strpos($pathinfo, '/Fiche')) {
             if (0 === strpos($pathinfo, '/Fiche/admin')) {
                 // admin_frais
@@ -1216,7 +1276,7 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
                 return $this->redirect($pathinfo.'/', 'point_web_app_homepage');
             }
 
-            return array (  '_controller' => 'PointWeb\\AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'point_web_app_homepage',);
+            return array (  '_controller' => 'PointWeb\\FicheBundle\\Controller\\DefaultController::indexAction',  '_route' => 'point_web_app_homepage',);
         }
 
         // point_web_app_legal

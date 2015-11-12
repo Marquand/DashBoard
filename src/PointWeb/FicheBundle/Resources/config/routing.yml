@@ -1,3 +1,7 @@
+point_web_fiche_autre:
+    resource: "@PointWebFicheBundle/Resources/config/routing/autre.yml"
+    prefix:   /autre
+
 point_web_fiche_admin_frais:
     resource: "@PointWebFicheBundle/Resources/config/routing/frais.yml"
     prefix:   /Fiche/admin

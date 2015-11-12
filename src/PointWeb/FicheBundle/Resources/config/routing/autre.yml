@@ -6,5 +6,25 @@ autre_show:
     path:     /{id}/show
     defaults: { _controller: "PointWebFicheBundle:Autre:show" }
 
+autre_new:
+    path:     /new
+    defaults: { _controller: "PointWebFicheBundle:Autre:new" }
 
+autre_create:
+    path:     /create
+    defaults: { _controller: "PointWebFicheBundle:Autre:create" }
+    methods:  POST
 
+autre_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "PointWebFicheBundle:Autre:edit" }
+
+autre_update:
+    path:     /{id}/update
+    defaults: { _controller: "PointWebFicheBundle:Autre:update" }
+    methods:  [POST, PUT]
+
+autre_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "PointWebFicheBundle:Autre:delete" }
+    methods:  [POST, DELETE]

@@ -1,55 +1,55 @@
 {% extends 'PointWebFicheBundle::base.html.twig' %}
 {% block content %}
     <h1>Frais</h1>
-<div class="col-lg-5 table-responsive">
-    <table class="records_list table table-bordered table-hover table-striped">
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ entity.id }}</td>
-            </tr>
-            <tr>
-                <th>Nombre de nuit</th>
-                <td>{{ entity.qtNuit }}</td>
-            </tr>
-            <tr>
-                <th>Nombre de repas </th>
-                <td>{{ entity.qtRepas }}</td>
-            </tr>
-            <tr>
-                <th>Nombre de Kilomètre</th>
-                <td>{{ entity.qtKm }}</td>
-            </tr>
-            <tr>
-                <th>Prix de la nuité</th>
-                <td>{{ entity.prixNuit }}</td>
-            </tr>
-            <tr>
-                <th>Prix du repas</th>
-                <td>{{ entity.prixRepas }}</td>
-            </tr>
-            <tr>
-                <th>Prix de l'essence</th>
-                <td>{{ entity.prixKm }}</td>
-            </tr>
-            <tr>
-                <th>Total nuité</th>
-                <td>{{ entity.totalNuit }}</td>
-            </tr>
-            <tr>
-                <th>Total repas</th>
-                <td>{{ entity.totalRepas }}</td>
-            </tr>
-            <tr>
-                <th>Total Kilomètrage</th>
-                <td>{{ entity.totalKm }}</td>
-            </tr>
-            <tr>
-                <th>Total</th>
-                <td>{{ entity.total }}</td>
-            </tr>
-        </tbody>
-    </table>
+    <fieldset>
+        <div class="col-lg-9 table-responsive">
+            <table class="records_list table table-bordered table-hover table-striped">
+                <thead>
+                <tr>
+                    {% if app.user %}
+                        <p class="paragraphe">HELLO  </p>
+                    {% else %}
+                    <p class="paragraphe">Pas connecté </p>
+                    {% endif %}
+                    <th>id: {{ entity.id }}</th>
+                    <th>Quantité</th>
+                    <th>Prix</th>
+                    <th>Total</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td><h5>Nuité</h5></td>
+                    <td><div class="col-lg-6">{{ entity.qtNuit}}</div></td>
+                    <td><div class="col-lg-6">{{ entity.prixNuit }}</div></td>
+                    <td><div class="col-lg-6">{{ entity.totalNuit }}</div></td>
+                </tr>
+                </tbody>
+                <tbody>
+                <tr><td><h5>Repas</h5></td>
+                    <td><div class="col-lg-6"> {{ entity.qtRepas }}</div></td>
+                    <td><div class="col-lg-6"> {{ entity.prixRepas }}</div></td>
+                    <td><div class="col-lg-6"> {{ entity.totalRepas }}</div></td>
+                </tr>
+                </tbody>
+                <tbody>
+                <tr><td><h5>Kilomètrage</h5></td>
+                    <td><div class="col-lg-6"> {{ entity.qtKm }}</div></td>
+                    <td><div class="col-lg-6"> {{ entity.prixKm }}</div></td>
+                    <td><div class="col-lg-6"> {{ entity.totalKm }}</div></td>
+                </tr>
+                </tbody>
+                <tbody>
+                <tr><td><h5>Total</h5></td>
+                    <td><div class="col-lg-6"></div></td>
+                    <td><div class="col-lg-6"></div></td>
+                    <td><div class="col-lg-6">{{ entity.total }}</div></td>
+                </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+    </fieldset>
 
         <ul class="record_actions">
     <li>

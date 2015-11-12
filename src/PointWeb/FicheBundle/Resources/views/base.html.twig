@@ -55,9 +55,8 @@
 <body>
 
 {% block body %}
-
-        {% block header %}
-            {% include 'PointWebFicheBundle::_nav.html.twig' %}
+        {% block nav %}
+            {{ render(controller('PointWebFicheBundle:Default:nav')) }}
         {% endblock %}
         <h1 title="{{ app.request.get('_route')|getRef('h1Title') }}">{{ app.request.get('_route')|getRef('h1') }}</h1>
 
@@ -68,20 +67,24 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">
-                        Dashboard <small>Statistics Overview</small>
+                        Dashboard <small>Page d'administration et de gestion</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li class="active">
-                            <i class="fa fa-dashboard"></i> Dashboard
+                            <i class="fa fa-dashboard"></i> Marquand Thibault
                         </li>
                     </ol>
                 </div>
             </div>
-
+            {% if app.user %}
         {% block content %}
 
         {% endblock %}
-
+                {% else %}
+                <div class="alert alert-danger">
+                    <strong>Attention</strong>, Connectez-vous pour profité du site.
+                </div>
+            {% endif %}
     {% endblock %}
 
     <div id="scrollToTop"><a href="#">&#9650;</a></div>

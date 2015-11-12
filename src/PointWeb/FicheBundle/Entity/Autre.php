@@ -7,11 +7,17 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Autre
  *
- * @ORM\Table()
+ * @ORM\Table(name="objet")
  * @ORM\Entity(repositoryClass="PointWeb\FicheBundle\Entity\AutreRepository")
  */
 class Autre
 {
+    /**
+     * @ORM\ManyToOne(targetEntity="Frais", inversedBy="Autre")
+     * @ORM\JoinColumn(name="frais", referencedColumnName="id")
+     */
+    private $frais;
+
     /**
      * @var integer
      *
@@ -180,5 +186,28 @@ class Autre
     public function getJustificatif()
     {
         return $this->justificatif;
+    }
+
+    /**
+     * Set frais
+     *
+     * @param \PointWeb\FicheBundle\Entity\Frais $frais
+     * @return Autre
+     */
+    public function setDevis(\PointWeb\FicheBundle\Entity\Frais $frais = null)
+    {
+        $this->frais = $frais;
+
+        return $this;
+    }
+
+    /**
+     * Get devis
+     *
+     * @return \PointWeb\FicheBundle\Entity\Frais
+     */
+    public function getFrais()
+    {
+        return $this->frais;
     }
 }

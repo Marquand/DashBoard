@@ -17,7 +17,7 @@ class FraisType extends AbstractType
         $builder
             ->add('qtNuit', 'integer', array(
                 "label" => "Nombre de nuit :",
-                'attr' => array('class' => 'form-control'),
+                'attr' => array('class' => 'form-control cubage-multiply-volume'),
                 'label_attr' => array('class' => 'col-lg-2 control-label'),
             ))
             ->add('qtRepas', 'integer', array(
@@ -30,9 +30,11 @@ class FraisType extends AbstractType
                 'attr' => array('class' => 'form-control'),
                 'label_attr' => array('class' => 'col-lg-2 control-label'),
             ))
+
+
             ->add('prixNuit', 'text', array(
                 "label" => "Prix de la nuité :",
-                'attr' => array('class' => 'form-control'),
+                'attr' => array('class' => 'form-control cubage-multiply'),
                 'label_attr' => array('class' => 'col-lg-2 control-label'),
             ))
             ->add('prixRepas', 'text', array(
@@ -45,9 +47,11 @@ class FraisType extends AbstractType
                 'attr' => array('class' => 'form-control'),
                 'label_attr' => array('class' => 'col-lg-2 control-label'),
             ))
+
+
             ->add('totalNuit', 'text', array(
                 "label" => "Total nuit :",
-                'attr' => array('class' => 'form-control'),
+                'attr' => array('class' => 'form-control container'),
                 'label_attr' => array('class' => 'col-lg-2 control-label'),
             ))
             ->add('totalRepas', 'text', array(
@@ -60,6 +64,7 @@ class FraisType extends AbstractType
                 'attr' => array('class' => 'form-control'),
                 'label_attr' => array('class' => 'col-lg-2 control-label'),
             ))
+
             ->add('total', 'text', array(
                 "label" => "Total :",
                 'attr' => array('class' => 'form-control'),

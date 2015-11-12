@@ -4,6 +4,9 @@ namespace PointWeb\FicheBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+use PointWeb\FicheBundle\Entity\Autre;
+use Doctrine\Common\Collections\ArrayCollection;
+
 /**
  * Frais
  *
@@ -12,6 +15,16 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Frais
 {
+
+    /**
+     * @ORM\OneToMany(targetEntity="Autre", mappedBy="autre", cascade={"persist"})
+     */
+    private $autre;
+    public function __construct()
+    {
+        $this->autre = new ArrayCollection();
+    }
+
     /**
      * @var integer
      *
@@ -330,5 +343,39 @@ class Frais
     public function getTotal()
     {
         return $this->total;
+    }
+
+
+    /**
+     * Add autre
+     *
+     * @param \PointWeb\FicheBundle\Entity\Autre $autre
+     * @return Devis
+     */
+    public function addObjet(Autre $autre)
+    {
+        $this->autre[] = $autre;
+        $autre->setDevis($this);
+        return $this;
+    }
+
+    /**
+     * Remove autre
+     *
+     * @param \PointWeb\FicheBundle\Entity\Autre $autre
+     */
+    public function removeObjet(\PointWeb\FicheBundle\Entity\Autre $autre)
+    {
+        $this->autre->removeElement($autre);
+    }
+
+    /**
+     * Get autre
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getAutre()
+    {
+        return $this->autre;
     }
 }

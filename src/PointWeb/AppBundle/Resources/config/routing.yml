@@ -1,6 +1,6 @@
 point_web_app_homepage:
     path:     /
-    defaults: { _controller: PointWebAppBundle:Default:index }
+    defaults: { _controller: PointWebFicheBundle:Default:index }
 
 point_web_app_legal:
     path:     /legal
