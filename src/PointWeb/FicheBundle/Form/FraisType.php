@@ -17,7 +17,7 @@ class FraisType extends AbstractType
         $builder
             ->add('qtNuit', 'integer', array(
                 "label" => "Nombre de nuit :",
-                'attr' => array('class' => 'form-control cubage-multiply-volume'),
+                'attr' => array('class' => 'form-control'),
                 'label_attr' => array('class' => 'col-lg-2 control-label'),
             ))
             ->add('qtRepas', 'integer', array(

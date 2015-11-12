@@ -16,29 +16,33 @@
             </tr>
             </thead>
             <tbody>
-            <tr><td><h5>Nuité</h5></td>
-                <td><div class="col-lg-6" > {{ form_errors(form.qtNuit) }}{{ form_widget(form.qtNuit) }}</div></td>
-                <td><div class="col-lg-6"> {{ form_errors(form.prixNuit) }}{{ form_widget(form.prixNuit) }}</div></td>
-                <td><div class="col-lg-6"> {{ form_errors(form.totalNuit) }}{{ form_widget(form.totalNuit) }}</div></td>
+            <tr >
+                <td><h5>Nuité</h5></td>
+                <td><div class="col-lg-6 quantite" > {{ form_errors(form.qtNuit) }}{{ form_widget(form.qtNuit) }}</div></td>
+                <td><div class="col-lg-6 prix"> {{ form_errors(form.prixNuit) }}{{ form_widget(form.prixNuit) }}</div></td>
+                <td><div class="col-lg-6"> <div class="container"></div> </div></td>
             </tr>
             </tbody>
             <tbody>
-            <tr><td><h5>Repas</h5></td>
+            <tr>
+                <td><h5>Repas</h5></td>
                 <td><div class="col-lg-6"> {{ form_errors(form.qtRepas) }}{{ form_widget(form.qtRepas) }}</div></td>
                 <td><div class="col-lg-6"> {{ form_errors(form.prixRepas) }}{{ form_widget(form.prixRepas) }}</div></td>
                 <td><div class="col-lg-6"> {{ form_errors(form.totalRepas) }}{{ form_widget(form.totalRepas) }}</div></td>
             </tr>
             </tbody>
             <tbody>
-            <tr><td><h5>Kilomètrage</h5></td>
+            <tr>
+                <td><h5>Kilomètrage</h5></td>
                 <td><div class="col-lg-6"> {{ form_errors(form.qtKm) }}{{ form_widget(form.qtKm) }}</div></td>
                 <td><div class="col-lg-6"> {{ form_errors(form.prixKm) }}{{ form_widget(form.prixKm) }}</div></td>
                 <td><div class="col-lg-6"> {{ form_errors(form.totalKm) }}{{ form_widget(form.totalKm) }}</div></td>
             </tr>
             </tbody>
             <tbody>
-            <tr><td><h5>Total</h5></td>
-                <td><div class="col-lg-6"></div></td>
+            <tr>
+                <td><h5>Total</h5></td>
+                <td><div class="col-lg-6 "></div></td>
                 <td><div class="col-lg-6"></div></td>
                 <td><div class="col-lg-6"> {{ form_errors(form.total) }}{{ form_widget(form.total) }}</div></td>
             </tr>
@@ -62,8 +66,8 @@
         $(".table-cubage").each(function (i, val) {
             $(val).change(function (e) {
                 e.preventDefault();
-                var value_multiply = $(val).val() * $('.cubage-multiply-volume').val();
-                $('.container').html(value_multiply);
+                var test = $('.quantite').val()*$('.prix').val();
+                $('.container').html(test);
                 var cat = target.split("-");
                 var total = 0;
                 $(".resultat").each(function (j, value) {
