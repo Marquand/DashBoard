@@ -2,14 +2,17 @@
 
 {% block content %}
     <h1>Frais creation</h1>
+    {% for essence in price_essence %}
 
+    {% endfor %}
 {{ form_start(form, {'attr': {'class':'form-horizontal' }}) }}
 <fieldset>
-    <div class="col-lg-9 table-responsive table-cubage" data-target="1">
-        <table class="records_list table table-bordered table-hover table-striped">
+    <div class="col-lg-9 table-responsive" data-target="1">
+        <table class="records_list table table-bordered table-hover table-striped table-cubage">
             <thead>
             <tr>
-                <th>{{ app.user.fullname }}</th>
+                <div class="col-lg-12 ">{{ app.user.fullname }}</div>
+                <th></th>
                 <th>Quantité</th>
                 <th>Prix</th>
                 <th>Total</th>
@@ -18,9 +21,9 @@
             <tbody>
             <tr >
                 <td><h5>Nuité</h5></td>
-                <td><div class="col-lg-6 quantite" > {{ form_errors(form.qtNuit) }}{{ form_widget(form.qtNuit) }}</div></td>
-                <td><div class="col-lg-6 prix"> {{ form_errors(form.prixNuit) }}{{ form_widget(form.prixNuit) }}</div></td>
-                <td><div class="col-lg-6"> <div class="container"></div> </div></td>
+                <td><div class="col-lg-6 " > {{ form_errors(form.qtNuit) }}{{ form_widget(form.qtNuit) }}</div></td>
+                <td><div class="col-lg-6 "> {{ form_errors(form.prixNuit) }}{{ form_widget(form.prixNuit) }}</div></td>
+                <td><div class="col-lg-6">{{ form_errors(form.totalNuit) }}{{ form_widget(form.totalNuit) }} </div></td>
             </tr>
             </tbody>
             <tbody>
@@ -31,12 +34,15 @@
                 <td><div class="col-lg-6"> {{ form_errors(form.totalRepas) }}{{ form_widget(form.totalRepas) }}</div></td>
             </tr>
             </tbody>
+
             <tbody>
             <tr>
-                <td><h5>Kilomètrage</h5></td>
-                <td><div class="col-lg-6"> {{ form_errors(form.qtKm) }}{{ form_widget(form.qtKm) }}</div></td>
-                <td><div class="col-lg-6"> {{ form_errors(form.prixKm) }}{{ form_widget(form.prixKm) }}</div></td>
-                <td><div class="col-lg-6"> {{ form_errors(form.totalKm) }}{{ form_widget(form.totalKm) }}</div></td>
+                <td><h5>Essence</h5></td>
+                {% for essence in price_essence %}
+                    <td><div class="col-lg-6"> {{ form_errors(form.qtKm) }}{{ form_widget(form.qtKm) }}</div></td>
+                    <td><div class="col-lg-6"> {{ form_errors(form.prixKm) }}{{ form_widget(form.prixKm,{"value": essence.price }) }}</div></td>
+                    <td><div class="col-lg-6"> {{ form_errors(form.totalKm) }}{{ form_widget(form.totalKm) }}</div></td>
+                {% endfor %}
             </tr>
             </tbody>
             <tbody>
@@ -50,8 +56,14 @@
 
             </table>
         </div>
-
 </fieldset>
+    <div class="form-group">
+        {{ form_label(form.online) }}
+        <div class="col-lg-10">
+            {{ form_errors(form.online) }}
+            {{ form_widget(form.online) }}
+        </div>
+    </div>
     {{ form_end(form) }}
         <ul class="record_actions">
     <li>
@@ -59,23 +71,12 @@
             Back to the list
         </a>
     </li>
-</ul>
-
+        </ul>
 
     <script>
-        $(".table-cubage").each(function (i, val) {
-            $(val).change(function (e) {
-                e.preventDefault();
-                var test = $('.quantite').val()*$('.prix').val();
-                $('.container').html(test);
-                var cat = target.split("-");
-                var total = 0;
-                $(".resultat").each(function (j, value) {
-                    if ($(value).html()) {
-                        total = total + parseFloat($(value).html());
-                    }
-                });
-            });
-        });
+        var quantite = document.getElementById("qt1").value;
+        var prix = document.getElementById("p1").value;
+        var total = document.getElementById("t1").value;
     </script>
+
 {% endblock %}

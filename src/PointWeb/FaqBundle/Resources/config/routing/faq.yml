@@ -1,3 +1,0 @@
-faq:
-    path:     /
-    defaults: { _controller: PointWebFaqBundle:Default:index }

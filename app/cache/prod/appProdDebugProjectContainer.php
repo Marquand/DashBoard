@@ -541,28 +541,21 @@ class appProdDebugProjectContainer extends Container
     {
         $a = $this->get('annotation_reader');
 
-        $b = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($a, array(0 => ($this->targetDirs[3].'/src/PointWeb/AppBundle/Entity'), 1 => ($this->targetDirs[3].'/src/PointWeb/AdminBundle/Entity'), 2 => ($this->targetDirs[3].'/src/PointWeb/UserBundle/Entity'), 3 => ($this->targetDirs[3].'/src/PointWeb/NewsBundle/Entity'), 4 => ($this->targetDirs[3].'/src/PointWeb/PartnerBundle/Entity'), 5 => ($this->targetDirs[3].'/src/PointWeb/GuestBookBundle/Entity'), 6 => ($this->targetDirs[3].'/src/PointWeb/GalleryBundle/Entity'), 7 => ($this->targetDirs[3].'/src/PointWeb/GedBundle/Entity'), 8 => ($this->targetDirs[3].'/src/PointWeb/FaqBundle/Entity'), 9 => ($this->targetDirs[3].'/src/PointWeb/ProductBundle/Entity'), 10 => ($this->targetDirs[3].'/src/PointWeb/CalendarBundle/Entity'), 11 => ($this->targetDirs[3].'/src/PointWeb/ReferencingBundle/Entity'), 12 => ($this->targetDirs[3].'/src/PointWeb/PageBundle/Entity'), 13 => ($this->targetDirs[3].'/src/PointWeb/VeilleBundle/Entity'), 14 => ($this->targetDirs[3].'/src/PointWeb/FicheBundle/Entity')));
+        $b = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($a, array(0 => ($this->targetDirs[3].'/src/PointWeb/AppBundle/Entity'), 1 => ($this->targetDirs[3].'/src/PointWeb/AdminBundle/Entity'), 2 => ($this->targetDirs[3].'/src/PointWeb/UserBundle/Entity'), 3 => ($this->targetDirs[3].'/src/PointWeb/NewsBundle/Entity'), 4 => ($this->targetDirs[3].'/src/PointWeb/ProductBundle/Entity'), 5 => ($this->targetDirs[3].'/src/PointWeb/ReferencingBundle/Entity'), 6 => ($this->targetDirs[3].'/src/PointWeb/PageBundle/Entity'), 7 => ($this->targetDirs[3].'/src/PointWeb/FicheBundle/Entity')));
 
         $c = new \Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain();
         $c->addDriver($b, 'PointWeb\\AppBundle\\Entity');
         $c->addDriver($b, 'PointWeb\\AdminBundle\\Entity');
         $c->addDriver($b, 'PointWeb\\UserBundle\\Entity');
         $c->addDriver($b, 'PointWeb\\NewsBundle\\Entity');
-        $c->addDriver($b, 'PointWeb\\PartnerBundle\\Entity');
-        $c->addDriver($b, 'PointWeb\\GuestBookBundle\\Entity');
-        $c->addDriver($b, 'PointWeb\\GalleryBundle\\Entity');
-        $c->addDriver($b, 'PointWeb\\GedBundle\\Entity');
-        $c->addDriver($b, 'PointWeb\\FaqBundle\\Entity');
         $c->addDriver($b, 'PointWeb\\ProductBundle\\Entity');
-        $c->addDriver($b, 'PointWeb\\CalendarBundle\\Entity');
         $c->addDriver($b, 'PointWeb\\ReferencingBundle\\Entity');
         $c->addDriver($b, 'PointWeb\\PageBundle\\Entity');
-        $c->addDriver($b, 'PointWeb\\VeilleBundle\\Entity');
         $c->addDriver($b, 'PointWeb\\FicheBundle\\Entity');
         $c->addDriver(new \Doctrine\ORM\Mapping\Driver\XmlDriver(new \Doctrine\Common\Persistence\Mapping\Driver\SymfonyFileLocator(array(($this->targetDirs[3].'/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping') => 'FOS\\UserBundle\\Model'), '.orm.xml')), 'FOS\\UserBundle\\Model');
 
         $d = new \Doctrine\ORM\Configuration();
-        $d->setEntityNamespaces(array('PointWebAppBundle' => 'PointWeb\\AppBundle\\Entity', 'PointWebAdminBundle' => 'PointWeb\\AdminBundle\\Entity', 'PointWebUserBundle' => 'PointWeb\\UserBundle\\Entity', 'PointWebNewsBundle' => 'PointWeb\\NewsBundle\\Entity', 'PointWebPartnerBundle' => 'PointWeb\\PartnerBundle\\Entity', 'PointWebGuestBookBundle' => 'PointWeb\\GuestBookBundle\\Entity', 'PointWebGalleryBundle' => 'PointWeb\\GalleryBundle\\Entity', 'PointWebGedBundle' => 'PointWeb\\GedBundle\\Entity', 'PointWebFaqBundle' => 'PointWeb\\FaqBundle\\Entity', 'PointWebProductBundle' => 'PointWeb\\ProductBundle\\Entity', 'PointWebCalendarBundle' => 'PointWeb\\CalendarBundle\\Entity', 'PointWebReferencingBundle' => 'PointWeb\\ReferencingBundle\\Entity', 'PointWebPageBundle' => 'PointWeb\\PageBundle\\Entity', 'PointWebVeilleBundle' => 'PointWeb\\VeilleBundle\\Entity', 'PointWebFicheBundle' => 'PointWeb\\FicheBundle\\Entity'));
+        $d->setEntityNamespaces(array('PointWebAppBundle' => 'PointWeb\\AppBundle\\Entity', 'PointWebAdminBundle' => 'PointWeb\\AdminBundle\\Entity', 'PointWebUserBundle' => 'PointWeb\\UserBundle\\Entity', 'PointWebNewsBundle' => 'PointWeb\\NewsBundle\\Entity', 'PointWebProductBundle' => 'PointWeb\\ProductBundle\\Entity', 'PointWebReferencingBundle' => 'PointWeb\\ReferencingBundle\\Entity', 'PointWebPageBundle' => 'PointWeb\\PageBundle\\Entity', 'PointWebFicheBundle' => 'PointWeb\\FicheBundle\\Entity'));
         $d->setMetadataCacheImpl($this->get('doctrine_cache.providers.doctrine.orm.default_metadata_cache'));
         $d->setQueryCacheImpl($this->get('doctrine_cache.providers.doctrine.orm.default_query_cache'));
         $d->setResultCacheImpl($this->get('doctrine_cache.providers.doctrine.orm.default_result_cache'));
@@ -2099,7 +2092,7 @@ class appProdDebugProjectContainer extends Container
         $p = new \Symfony\Component\Security\Http\Authentication\DefaultAuthenticationFailureHandler($e, $m, array(), $a);
         $p->setOptions(array('login_path' => '/login', 'failure_path' => NULL, 'failure_forward' => false, 'failure_path_parameter' => '_failure_path'));
 
-        return $this->services['security.firewall.map.context.main'] = new \Symfony\Bundle\SecurityBundle\Security\FirewallContext(array(0 => new \Symfony\Component\Security\Http\Firewall\ChannelListener($l, new \Symfony\Component\Security\Http\EntryPoint\RetryAuthenticationEntryPoint(80, 443), $a), 1 => new \Symfony\Component\Security\Http\Firewall\ContextListener($b, array(0 => $this->get('fos_user.user_provider.username')), 'main', $a, $c), 2 => $n, 3 => new \Symfony\Component\Security\Http\Firewall\UsernamePasswordFormAuthenticationListener($b, $f, $this->get('security.authentication.session_strategy'), $m, 'main', $o, $p, array('check_path' => '/login_check', 'use_forward' => false, 'require_previous_session' => true, 'username_parameter' => '_username', 'password_parameter' => '_password', 'csrf_parameter' => '_csrf_token', 'intention' => 'authenticate', 'post_only' => true), $a, $c, $this->get('security.csrf.token_manager')), 4 => new \Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener($b, '56449521917eb5.06258758', $a, $f), 5 => new \Symfony\Component\Security\Http\Firewall\AccessListener($b, $this->get('security.access.decision_manager'), $l, $f)), new \Symfony\Component\Security\Http\Firewall\ExceptionListener($b, $this->get('security.authentication.trust_resolver'), $m, 'main', new \Symfony\Component\Security\Http\EntryPoint\FormAuthenticationEntryPoint($e, $m, '/login', false), NULL, NULL, $a));
+        return $this->services['security.firewall.map.context.main'] = new \Symfony\Bundle\SecurityBundle\Security\FirewallContext(array(0 => new \Symfony\Component\Security\Http\Firewall\ChannelListener($l, new \Symfony\Component\Security\Http\EntryPoint\RetryAuthenticationEntryPoint(80, 443), $a), 1 => new \Symfony\Component\Security\Http\Firewall\ContextListener($b, array(0 => $this->get('fos_user.user_provider.username')), 'main', $a, $c), 2 => $n, 3 => new \Symfony\Component\Security\Http\Firewall\UsernamePasswordFormAuthenticationListener($b, $f, $this->get('security.authentication.session_strategy'), $m, 'main', $o, $p, array('check_path' => '/login_check', 'use_forward' => false, 'require_previous_session' => true, 'username_parameter' => '_username', 'password_parameter' => '_password', 'csrf_parameter' => '_csrf_token', 'intention' => 'authenticate', 'post_only' => true), $a, $c, $this->get('security.csrf.token_manager')), 4 => new \Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener($b, '5697ae80cdcbd8.09656888', $a, $f), 5 => new \Symfony\Component\Security\Http\Firewall\AccessListener($b, $this->get('security.access.decision_manager'), $l, $f)), new \Symfony\Component\Security\Http\Firewall\ExceptionListener($b, $this->get('security.authentication.trust_resolver'), $m, 'main', new \Symfony\Component\Security\Http\EntryPoint\FormAuthenticationEntryPoint($e, $m, '/login', false), NULL, NULL, $a));
     }
 
     /**
@@ -3325,15 +3318,7 @@ class appProdDebugProjectContainer extends Container
         $instance->addResource('xlf', ($this->targetDirs[3].'/src/PointWeb/AdminBundle/Resources/translations/messages.fr.xlf'), 'fr', 'messages');
         $instance->addResource('xlf', ($this->targetDirs[3].'/src/PointWeb/UserBundle/Resources/translations/messages.fr.xlf'), 'fr', 'messages');
         $instance->addResource('xlf', ($this->targetDirs[3].'/src/PointWeb/NewsBundle/Resources/translations/messages.fr.xlf'), 'fr', 'messages');
-        $instance->addResource('xlf', ($this->targetDirs[3].'/src/PointWeb/PartnerBundle/Resources/translations/messages.fr.xlf'), 'fr', 'messages');
-        $instance->addResource('xlf', ($this->targetDirs[3].'/src/PointWeb/GuestBookBundle/Resources/translations/messages.fr.xlf'), 'fr', 'messages');
-        $instance->addResource('xlf', ($this->targetDirs[3].'/src/PointWeb/GalleryBundle/Resources/translations/messages.fr.xlf'), 'fr', 'messages');
-        $instance->addResource('xlf', ($this->targetDirs[3].'/src/PointWeb/GedBundle/Resources/translations/messages.fr.xlf'), 'fr', 'messages');
-        $instance->addResource('xlf', ($this->targetDirs[3].'/src/PointWeb/FaqBundle/Resources/translations/messages.fr.xlf'), 'fr', 'messages');
         $instance->addResource('xlf', ($this->targetDirs[3].'/src/PointWeb/ProductBundle/Resources/translations/messages.fr.xlf'), 'fr', 'messages');
-        $instance->addResource('xlf', ($this->targetDirs[3].'/src/PointWeb/CalendarBundle/Resources/translations/messages.fr.xlf'), 'fr', 'messages');
-        $instance->addResource('xlf', ($this->targetDirs[3].'/src/PointWeb/PrezBundle/Resources/translations/messages.fr.xlf'), 'fr', 'messages');
-        $instance->addResource('xlf', ($this->targetDirs[3].'/src/PointWeb/VeilleBundle/Resources/translations/messages.fr.xlf'), 'fr', 'messages');
         $instance->addResource('xlf', ($this->targetDirs[3].'/src/PointWeb/FicheBundle/Resources/translations/messages.fr.xlf'), 'fr', 'messages');
 
         return $instance;
@@ -3447,17 +3432,9 @@ class appProdDebugProjectContainer extends Container
         $instance->addPath(($this->targetDirs[3].'/src/PointWeb/AdminBundle/Resources/views'), 'PointWebAdmin');
         $instance->addPath(($this->targetDirs[3].'/src/PointWeb/UserBundle/Resources/views'), 'PointWebUser');
         $instance->addPath(($this->targetDirs[3].'/src/PointWeb/NewsBundle/Resources/views'), 'PointWebNews');
-        $instance->addPath(($this->targetDirs[3].'/src/PointWeb/PartnerBundle/Resources/views'), 'PointWebPartner');
-        $instance->addPath(($this->targetDirs[3].'/src/PointWeb/GuestBookBundle/Resources/views'), 'PointWebGuestBook');
-        $instance->addPath(($this->targetDirs[3].'/src/PointWeb/GalleryBundle/Resources/views'), 'PointWebGallery');
-        $instance->addPath(($this->targetDirs[3].'/src/PointWeb/GedBundle/Resources/views'), 'PointWebGed');
-        $instance->addPath(($this->targetDirs[3].'/src/PointWeb/FaqBundle/Resources/views'), 'PointWebFaq');
         $instance->addPath(($this->targetDirs[3].'/src/PointWeb/ProductBundle/Resources/views'), 'PointWebProduct');
-        $instance->addPath(($this->targetDirs[3].'/src/PointWeb/CalendarBundle/Resources/views'), 'PointWebCalendar');
         $instance->addPath(($this->targetDirs[3].'/src/PointWeb/ReferencingBundle/Resources/views'), 'PointWebReferencing');
         $instance->addPath(($this->targetDirs[3].'/src/PointWeb/PageBundle/Resources/views'), 'PointWebPage');
-        $instance->addPath(($this->targetDirs[3].'/src/PointWeb/PrezBundle/Resources/views'), 'PointWebPrez');
-        $instance->addPath(($this->targetDirs[3].'/src/PointWeb/VeilleBundle/Resources/views'), 'PointWebVeille');
         $instance->addPath(($this->targetDirs[3].'/src/PointWeb/FicheBundle/Resources/views'), 'PointWebFiche');
         $instance->addPath(($this->targetDirs[2].'/Resources/views'));
         $instance->addPath(($this->targetDirs[3].'/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form'));
@@ -3657,7 +3634,7 @@ class appProdDebugProjectContainer extends Container
      */
     protected function getSecurity_Authentication_ManagerService()
     {
-        $this->services['security.authentication.manager'] = $instance = new \Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager(array(0 => new \Symfony\Component\Security\Core\Authentication\Provider\DaoAuthenticationProvider($this->get('fos_user.user_provider.username'), $this->get('security.user_checker'), 'main', $this->get('security.encoder_factory'), true), 1 => new \Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider('56449521917eb5.06258758')), true);
+        $this->services['security.authentication.manager'] = $instance = new \Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager(array(0 => new \Symfony\Component\Security\Core\Authentication\Provider\DaoAuthenticationProvider($this->get('fos_user.user_provider.username'), $this->get('security.user_checker'), 'main', $this->get('security.encoder_factory'), true), 1 => new \Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider('5697ae80cdcbd8.09656888')), true);
 
         $instance->setEventDispatcher($this->get('debug.event_dispatcher'));
 
@@ -3856,17 +3833,9 @@ class appProdDebugProjectContainer extends Container
                 'PointWebAdminBundle' => 'PointWeb\\AdminBundle\\PointWebAdminBundle',
                 'PointWebUserBundle' => 'PointWeb\\UserBundle\\PointWebUserBundle',
                 'PointWebNewsBundle' => 'PointWeb\\NewsBundle\\PointWebNewsBundle',
-                'PointWebPartnerBundle' => 'PointWeb\\PartnerBundle\\PointWebPartnerBundle',
-                'PointWebGuestBookBundle' => 'PointWeb\\GuestBookBundle\\PointWebGuestBookBundle',
-                'PointWebGalleryBundle' => 'PointWeb\\GalleryBundle\\PointWebGalleryBundle',
-                'PointWebGedBundle' => 'PointWeb\\GedBundle\\PointWebGedBundle',
-                'PointWebFaqBundle' => 'PointWeb\\FaqBundle\\PointWebFaqBundle',
                 'PointWebProductBundle' => 'PointWeb\\ProductBundle\\PointWebProductBundle',
-                'PointWebCalendarBundle' => 'PointWeb\\CalendarBundle\\PointWebCalendarBundle',
                 'PointWebReferencingBundle' => 'PointWeb\\ReferencingBundle\\PointWebReferencingBundle',
                 'PointWebPageBundle' => 'PointWeb\\PageBundle\\PointWebPageBundle',
-                'PointWebPrezBundle' => 'PointWeb\\PrezBundle\\PointWebPrezBundle',
-                'PointWebVeilleBundle' => 'PointWeb\\VeilleBundle\\PointWebVeilleBundle',
                 'PointWebFicheBundle' => 'PointWeb\\FicheBundle\\PointWebFicheBundle',
             ),
             'kernel.charset' => 'UTF-8',

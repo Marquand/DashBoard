@@ -5,8 +5,6 @@ namespace PointWeb\UserBundle\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
-use PointWeb\CalendarBundle\Entity\CalendarEvent;
-use PointWeb\GedBundle\Entity\Folder;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
@@ -47,16 +45,7 @@ class User extends BaseUser
      */
     protected $lastName;
 
-    /**
-     * @ORM\ManyToMany(targetEntity="PointWeb\GedBundle\Entity\Folder", mappedBy="users")
-     * @ORM\OrderBy({"createDate" = "DESC"})
-     **/
-    private $folders;
 
-    /**
-     * @ORM\OneToMany(targetEntity="PointWeb\CalendarBundle\Entity\CalendarEvent", mappedBy="creator")
-     **/
-    private $events;
 
     /**
      * @var \DateTime
@@ -75,8 +64,6 @@ class User extends BaseUser
     public function __construct()
     {
         parent::__construct();
-        $this->folders = new ArrayCollection();
-        $this->events = new ArrayCollection();
         $this->enabled = 0;
     }
 
@@ -105,52 +92,6 @@ class User extends BaseUser
     public function getFullname()
     {
         return $this->username . ' (' . $this->lastName . ' ' . $this->firstName . ')';
-    }
-
-    /**
-     * Add Folder
-     *
-     * @param Folder $folder
-     * @return User
-     */
-    public function addFolder(Folder $folder)
-    {
-        $this->folders[] = $folder;
-
-        return $this;
-    }
-
-    public function removeFolder(Folder $folder)
-    {
-        $this->folders->removeElement($folder);
-    }
-
-    public function getFolders()
-    {
-        return $this->folders;
-    }
-
-    /**
-     * Add Event
-     *
-     * @param CalendarEvent $event
-     * @return User
-     */
-    public function addEvent(CalendarEvent $event)
-    {
-        $this->events[] = $event;
-
-        return $this;
-    }
-
-    public function removeEvent(CalendarEvent $event)
-    {
-        $this->events->removeElement($event);
-    }
-
-    public function getEvents()
-    {
-        return $this->events;
     }
 
     /**

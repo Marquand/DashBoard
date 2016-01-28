@@ -17,24 +17,24 @@ class FraisType extends AbstractType
         $builder
             ->add('qtNuit', 'integer', array(
                 "label" => "Nombre de nuit :",
-                'attr' => array('class' => 'form-control'),
+                'attr' => array('class' => 'form-control quantite'),
                 'label_attr' => array('class' => 'col-lg-2 control-label'),
             ))
             ->add('qtRepas', 'integer', array(
                 "label" => "Nombre de Repas :",
-                'attr' => array('class' => 'form-control'),
+                'attr' => array('class' => 'form-control '),
                 'label_attr' => array('class' => 'col-lg-2 control-label'),
             ))
             ->add('qtKm', 'integer', array(
                 "label" => "Nombre de trajet :",
-                'attr' => array('class' => 'form-control'),
+                'attr' => array('class' => 'form-control '),
                 'label_attr' => array('class' => 'col-lg-2 control-label'),
             ))
 
 
-            ->add('prixNuit', 'text', array(
+            ->add('prixNuit', 'number', array(
                 "label" => "Prix de la nuité :",
-                'attr' => array('class' => 'form-control cubage-multiply'),
+                'attr' => array('class' => 'form-control prix'),
                 'label_attr' => array('class' => 'col-lg-2 control-label'),
             ))
             ->add('prixRepas', 'text', array(
@@ -51,7 +51,7 @@ class FraisType extends AbstractType
 
             ->add('totalNuit', 'text', array(
                 "label" => "Total nuit :",
-                'attr' => array('class' => 'form-control container'),
+                'attr' => array('class' => 'form-control container','id' => 't1'),
                 'label_attr' => array('class' => 'col-lg-2 control-label'),
             ))
             ->add('totalRepas', 'text', array(
@@ -71,6 +71,46 @@ class FraisType extends AbstractType
                 'label_attr' => array('class' => 'col-lg-2 control-label'),
             ))
 
+            ->add('matricule', 'text', array(
+                "label" => "Nom Commercial :",
+                'attr' => array('class' => 'form-control'),
+                'label_attr' => array('class' => 'col-lg-2 control-label'),
+                ))
+
+
+            ->add('startDate', 'date', array(
+                'label' => "Date de début :",
+                'widget' => 'single_text',
+                'input' => 'datetime',
+                'required' => false,
+                'format' => 'dd/MM/yyyy',
+                'attr' => array('class' => 'form-control date_picker'),
+                'label_attr' => array('class' => 'col-lg-2 control-label'),
+            ))
+            ->add('endDate', 'date', array(
+                'label' => "Date de fin :",
+                'widget' => 'single_text',
+                'input' => 'datetime',
+                'required' => false,
+                'format' => 'dd/MM/yyyy',
+                'attr' => array('class' => 'form-control date_picker'),
+                'label_attr' => array('class' => 'col-lg-2 control-label'),
+            ))
+
+            ->add('online', 'choice', array(
+                'label' => 'En ligne ?',
+                'required' => false,
+                'placeholder' => false,
+                'choices' => array(
+                    '1' => 'Oui',
+                    '0' => 'Non'
+                ),
+                'data' => '0',
+                'multiple' => false,
+                'expanded' => true,
+                'attr' => array('class' => 'radio'),
+                'label_attr' => array('class' => 'col-lg-2 control-label'),
+            ))
         ;
     }
     

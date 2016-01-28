@@ -1,7 +1,0 @@
-point_web_veille_article:
-    resource: "@PointWebVeilleBundle/Resources/config/routing/article.yml"
-    prefix:   /admin/veille
-
-point_web_veille:
-    path:     /veille
-    defaults: { _controller: PointWebVeilleBundle:Default:index }

@@ -18,6 +18,7 @@ class DefaultController extends Controller
     public function indexAction()
     {
         $fichefrais = $this->getDoctrine()->getRepository('PointWebFicheBundle:Frais')->findAll();
+
         return $this->render('PointWebFicheBundle:Default:index.html.twig', array('fichefrais' => $fichefrais));
     }
 

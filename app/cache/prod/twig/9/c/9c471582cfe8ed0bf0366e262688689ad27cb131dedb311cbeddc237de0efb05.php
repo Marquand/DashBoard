@@ -222,51 +222,30 @@ class __TwigTemplate_8b9ffd3ce2569dbffb4f150c497d167392e666113d4c64cc1e95e02a83a
         echo $this->env->getExtension('routing')->getPath("point_web_app_homepage");
         echo "\"><i class=\"fa fa-fw fa-dashboard\"></i> Dashboard</a>
             </li>
-            <li>
-                <a href=\"";
-        // line 168
-        echo $this->env->getExtension('routing')->getPath("admin_frais");
-        echo "\"><i class=\"fa fa-fw fa-dashboard\"></i> Fiche de Frais</a>
-            </li>
                         ";
-        // line 170
+        // line 167
         if ($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array())) {
-            // line 171
-            echo "            <li>
-                <a href=\"charts.html\"><i class=\"fa fa-fw fa-bar-chart-o\"></i> Charts</a>
-            </li>
-            <li>
-                <a href=\"tables.html\"><i class=\"fa fa-fw fa-table\"></i> Tables</a>
-            </li>
-            <li>
-                <a href=\"forms.html\"><i class=\"fa fa-fw fa-edit\"></i> Forms</a>
-            </li>
-            <li>
-                <a href=\"bootstrap-elements.html\"><i class=\"fa fa-fw fa-desktop\"></i> Bootstrap Elements</a>
-            </li>
-            <li>
-                <a href=\"bootstrap-grid.html\"><i class=\"fa fa-fw fa-wrench\"></i> Bootstrap Grid</a>
-            </li>
-            <li>
-                <a href=\"javascript:;\" data-toggle=\"collapse\" data-target=\"#demo\"><i class=\"fa fa-fw fa-arrows-v\"></i> Dropdown <i class=\"fa fa-fw fa-caret-down\"></i></a>
-                <ul id=\"demo\" class=\"collapse\">
-                    <li>
-                        <a href=\"#\">Dropdown Item</a>
-                    </li>
-                    <li>
-                        <a href=\"#\">Dropdown Item</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href=\"blank-page.html\"><i class=\"fa fa-fw fa-file\"></i> Blank Page</a>
-            </li>
-            <li>
-                <a href=\"index-rtl.html\"><i class=\"fa fa-fw fa-dashboard\"></i> RTL Dashboard</a>
-            </li>
+            // line 168
+            echo "                            <li>
+                                <a href=\"javascript:;\" data-toggle=\"collapse\" data-target=\"#demo\"><i class=\"fa fa-fw fa-arrows-v\"></i> Fiche de Frais <i class=\"fa fa-fw fa-caret-down\"></i></a>
+                                <ul id=\"demo\" class=\"collapse\">
+                                    <li>
+                                        <a href=\"";
+            // line 172
+            echo $this->env->getExtension('routing')->getPath("admin_frais");
+            echo "\">Afficher</a>
+                                    </li>
+                                    <li>
+                                        <a href=\"";
+            // line 175
+            echo $this->env->getExtension('routing')->getPath("admin_frais_new");
+            echo "\">Ajouter</a>
+                                    </li>
+                                </ul>
+                            </li>
             ";
         }
-        // line 204
+        // line 180
         echo "        </ul>
     </div>
     <!-- /.navbar-collapse -->
@@ -281,7 +260,7 @@ class __TwigTemplate_8b9ffd3ce2569dbffb4f150c497d167392e666113d4c64cc1e95e02a83a
 
     public function getDebugInfo()
     {
-        return array (  270 => 204,  235 => 171,  233 => 170,  228 => 168,  222 => 165,  213 => 158,  193 => 141,  186 => 137,  180 => 134,  175 => 132,  171 => 131,  167 => 130,  160 => 125,  153 => 121,  136 => 108,  134 => 107,  30 => 5,  24 => 4,  20 => 2,);
+        return array (  249 => 180,  241 => 175,  235 => 172,  229 => 168,  227 => 167,  222 => 165,  213 => 158,  193 => 141,  186 => 137,  180 => 134,  175 => 132,  171 => 131,  167 => 130,  160 => 125,  153 => 121,  136 => 108,  134 => 107,  30 => 5,  24 => 4,  20 => 2,);
     }
 }
 /* {% trans_default_domain 'FOSUserBundle' %}*/
@@ -450,42 +429,18 @@ class __TwigTemplate_8b9ffd3ce2569dbffb4f150c497d167392e666113d4c64cc1e95e02a83a
 /*             <li class="active">*/
 /*                 <a href="{{ path('point_web_app_homepage') }}"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>*/
 /*             </li>*/
-/*             <li>*/
-/*                 <a href="{{ path('admin_frais') }}"><i class="fa fa-fw fa-dashboard"></i> Fiche de Frais</a>*/
-/*             </li>*/
 /*                         {% if app.user %}*/
-/*             <li>*/
-/*                 <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>*/
-/*             </li>*/
-/*             <li>*/
-/*                 <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>*/
-/*             </li>*/
-/*             <li>*/
-/*                 <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>*/
-/*             </li>*/
-/*             <li>*/
-/*                 <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>*/
-/*             </li>*/
-/*             <li>*/
-/*                 <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>*/
-/*             </li>*/
-/*             <li>*/
-/*                 <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>*/
-/*                 <ul id="demo" class="collapse">*/
-/*                     <li>*/
-/*                         <a href="#">Dropdown Item</a>*/
-/*                     </li>*/
-/*                     <li>*/
-/*                         <a href="#">Dropdown Item</a>*/
-/*                     </li>*/
-/*                 </ul>*/
-/*             </li>*/
-/*             <li>*/
-/*                 <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>*/
-/*             </li>*/
-/*             <li>*/
-/*                 <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>*/
-/*             </li>*/
+/*                             <li>*/
+/*                                 <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Fiche de Frais <i class="fa fa-fw fa-caret-down"></i></a>*/
+/*                                 <ul id="demo" class="collapse">*/
+/*                                     <li>*/
+/*                                         <a href="{{ path('admin_frais') }}">Afficher</a>*/
+/*                                     </li>*/
+/*                                     <li>*/
+/*                                         <a href="{{ path('admin_frais_new') }}">Ajouter</a>*/
+/*                                     </li>*/
+/*                                 </ul>*/
+/*                             </li>*/
 /*             {% endif %}*/
 /*         </ul>*/
 /*     </div>*/

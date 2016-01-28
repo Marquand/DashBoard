@@ -1,3 +1,0 @@
-point_web_prez:
-    path:     /presentation
-    defaults: { _controller: PointWebPrezBundle:Default:index }

@@ -35,6 +35,68 @@ class Frais
     private $id;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="matricule", type="string")
+     */
+    private $matricule;
+
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="start_date", type="date", nullable=true)
+     */
+    private $startDate;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="end_date", type="date", nullable=true)
+     */
+    private $endDate;
+
+
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="update_date", type="date", nullable=true)
+     */
+    private $updateDate;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="create_date", type="date", nullable=true)
+     */
+    private $createDate;
+
+
+
+    /**
+     * @var boolean
+     * @ORM\Column(name="online", type="boolean", nullable=true)
+     */
+    private $online;
+    /**
+     * @var boolean
+     * @ORM\Column(name="valide", type="boolean", nullable=true)
+     */
+    private $valide;
+    /**
+     * @var boolean
+     * @ORM\Column(name="attente", type="boolean", nullable=true)
+     */
+    private $attente;
+    /**
+     * @var boolean
+     * @ORM\Column(name="refuser", type="boolean", nullable=true)
+     */
+    private $refuser;
+
+
+    /**
      * @var integer
      *
      * @ORM\Column(name="qt_nuit", type="integer")
@@ -115,16 +177,27 @@ class Frais
         return $this->id;
     }
 
+
     /**
-     * Set qtNuit
+     * Get matricule
      *
-     * @param integer $qtNuit
+     * @return string
+     */
+    public function getMatricule()
+    {
+        return $this->matricule;
+    }
+
+    /**
+     * Set matricule
+     *
+     * @param string $matricule
      * @return Frais
      */
-    public function setQtNuit($qtNuit)
+    public function setMatricule($matricule)
     {
-        $this->qtNuit = $qtNuit;
-    
+        $this->matricule = $matricule;
+
         return $this;
     }
 
@@ -136,6 +209,69 @@ class Frais
     public function getQtNuit()
     {
         return $this->qtNuit;
+    }
+
+
+    /**
+     * Set startDate
+     *
+     * @param \DateTime $startDate
+     * @return Frais
+     */
+    public function setStartDate($startDate)
+    {
+        $this->startDate = $startDate;
+
+        return $this;
+    }
+
+    /**
+     * Get startDate
+     *
+     * @return \DateTime
+     */
+    public function getStartDate()
+    {
+        return $this->startDate;
+    }
+
+    /**
+     * Set endDate
+     *
+     * @param \DateTime $endDate
+     * @return Frais
+     */
+    public function setEndDate($endDate)
+    {
+        $this->endDate = $endDate;
+
+        return $this;
+    }
+
+    /**
+     * Get endDate
+     *
+     * @return \DateTime
+     */
+    public function getEndDate()
+    {
+        return $this->endDate;
+    }
+
+
+
+
+    /**
+     * Set qtNuit
+     *
+     * @param integer $qtNuit
+     * @return Frais
+     */
+    public function setQtNuit($qtNuit)
+    {
+        $this->qtNuit = $qtNuit;
+
+        return $this;
     }
 
     /**
@@ -377,5 +513,159 @@ class Frais
     public function getAutre()
     {
         return $this->autre;
+    }
+
+
+
+    /**
+     * Set online
+     *
+     * @param boolean $online
+     * @return Frais
+     */
+    public function setOnline($online)
+    {
+        $this->online = $online;
+
+        return $this;
+    }
+
+    /**
+     * Get online
+     *
+     * @return boolean
+     */
+    public function getOnline()
+    {
+        return $this->online;
+    }
+
+    /**
+     * Set valide
+     *
+     * @param boolean $valide
+     * @return Frais
+     */
+    public function setValide($valide)
+    {
+        $this->valide = $valide;
+
+        return $this;
+    }
+
+    /**
+     * Get valide
+     *
+     * @return boolean
+     */
+    public function getValide()
+    {
+        return $this->valide;
+    }
+
+    /**
+     * Set attente
+     *
+     * @param boolean $attente
+     * @return Frais
+     */
+    public function setAttente($attente)
+    {
+        $this->attente = $attente;
+
+        return $this;
+    }
+
+    /**
+     * Get attente
+     *
+     * @return boolean
+     */
+    public function getAttente()
+    {
+        return $this->attente;
+    }
+
+    /**
+     * Set refuser
+     *
+     * @param boolean $refuser
+     * @return Frais
+     */
+    public function setRefuser($refuser)
+    {
+        $this->refuser = $refuser;
+
+        return $this;
+    }
+
+    /**
+     * Get refuser
+     *
+     * @return boolean
+     */
+    public function getRefuser()
+    {
+        return $this->refuser;
+    }
+
+
+
+    /**
+     * Set updateDate
+     *
+     * @param \DateTime $updateDate
+     * @return Frais
+     */
+    public function setUpdateDate($updateDate)
+    {
+        $this->updateDate = $updateDate;
+
+        return $this;
+    }
+
+    /**
+     * Get updateDate
+     *
+     * @return \DateTime
+     */
+    public function getUpdateDate()
+    {
+        return $this->updateDate;
+    }
+
+    /**
+     * Set createDate
+     *
+     * @param \DateTime $createDate
+     * @return Frais
+     */
+    public function setCreateDate($createDate)
+    {
+        $this->createDate = $createDate;
+
+        return $this;
+    }
+
+    /**
+     * Get createDate
+     *
+     * @return \DateTime
+     */
+    public function getCreateDate()
+    {
+        return $this->createDate;
+    }
+
+    /**
+     * @ORM\PrePersist()
+     * @ORM\PreUpdate()
+     */
+    public function preUpdate()
+    {
+        if (null == $this->createDate) {
+            $this->createDate = new \DateTime();
+        }
+        $this->updateDate = new \DateTime();
     }
 }

@@ -78,12 +78,25 @@ class FraisController extends Controller
      */
     public function newAction()
     {
+        $em = $this->getDoctrine()->getManager();
         $entity = new Frais();
         $form   = $this->createCreateForm($entity);
 
+        $price_essence = $this->getDoctrine()->getRepository('PointWebProductBundle:Product')->findAll();
+        $catType = $this->getDoctrine()->getRepository('PointWebProductBundle:Category')->findAll();
+        $type = array();
+        foreach ($catType as $subcat) {
+            $tmpType = $em->getRepository('PointWebProductBundle:Product')->findBy(array('online' => true, 'category'=>array($subcat->getId(),1)));
+            $type[] = $tmpType;
+        }
+
+    
         return $this->render('PointWebFicheBundle:Frais:new.html.twig', array(
             'entity' => $entity,
             'form'   => $form->createView(),
+            'price_essence' => $price_essence,
+            'catType' =>  $catType,
+            'type' =>  $type
         ));
     }
 

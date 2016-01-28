@@ -127,7 +127,7 @@ class __TwigTemplate_9cac846f39a7d0bbbe8736ac557b1aa12e7b5c8f20525c9159fb2438911
 ";
         // line 57
         $this->displayBlock('body', $context, $blocks);
-        // line 89
+        // line 90
         echo "
     <div id=\"scrollToTop\"><a href=\"#\">&#9650;</a></div>
 
@@ -141,9 +141,9 @@ class __TwigTemplate_9cac846f39a7d0bbbe8736ac557b1aa12e7b5c8f20525c9159fb2438911
 <!-- /#wrapper -->
 
     ";
-        // line 101
+        // line 102
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 103
+        // line 104
         echo "</body>
 </html>";
     }
@@ -152,9 +152,11 @@ class __TwigTemplate_9cac846f39a7d0bbbe8736ac557b1aa12e7b5c8f20525c9159fb2438911
     public function block_body($context, array $blocks = array())
     {
         // line 58
-        echo "        ";
+        echo "
+        ";
+        // line 59
         $this->displayBlock('nav', $context, $blocks);
-        // line 61
+        // line 62
         echo "        <h1 title=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('app_extension')->getRef($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()), "get", array(0 => "_route"), "method"), "h1Title"), "html", null, true);
         echo "\">";
@@ -178,46 +180,46 @@ class __TwigTemplate_9cac846f39a7d0bbbe8736ac557b1aa12e7b5c8f20525c9159fb2438911
                 </div>
             </div>
             ";
-        // line 79
+        // line 80
         if ($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array())) {
-            // line 80
+            // line 81
             echo "        ";
             $this->displayBlock('content', $context, $blocks);
-            // line 83
+            // line 84
             echo "                ";
         } else {
-            // line 84
+            // line 85
             echo "                <div class=\"alert alert-danger\">
                     <strong>Attention</strong>, Connectez-vous pour profité du site.
                 </div>
             ";
         }
-        // line 88
+        // line 89
         echo "    ";
     }
 
-    // line 58
+    // line 59
     public function block_nav($context, array $blocks = array())
     {
-        // line 59
+        // line 60
         echo "            ";
         echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("PointWebFicheBundle:Default:nav"));
         echo "
         ";
     }
 
-    // line 80
+    // line 81
     public function block_content($context, array $blocks = array())
     {
-        // line 81
+        // line 82
         echo "
         ";
     }
 
-    // line 101
+    // line 102
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 102
+        // line 103
         echo "    ";
     }
 
@@ -233,7 +235,7 @@ class __TwigTemplate_9cac846f39a7d0bbbe8736ac557b1aa12e7b5c8f20525c9159fb2438911
 
     public function getDebugInfo()
     {
-        return array (  221 => 102,  218 => 101,  213 => 81,  210 => 80,  203 => 59,  200 => 58,  196 => 88,  190 => 84,  187 => 83,  184 => 80,  182 => 79,  158 => 61,  155 => 58,  152 => 57,  147 => 103,  145 => 101,  131 => 89,  129 => 57,  107 => 38,  101 => 35,  97 => 34,  93 => 33,  86 => 29,  81 => 27,  74 => 23,  69 => 21,  64 => 19,  57 => 15,  53 => 14,  48 => 12,  44 => 11,  37 => 7,  33 => 6,  29 => 5,  23 => 1,);
+        return array (  223 => 103,  220 => 102,  215 => 82,  212 => 81,  205 => 60,  202 => 59,  198 => 89,  192 => 85,  189 => 84,  186 => 81,  184 => 80,  160 => 62,  158 => 59,  155 => 58,  152 => 57,  147 => 104,  145 => 102,  131 => 90,  129 => 57,  107 => 38,  101 => 35,  97 => 34,  93 => 33,  86 => 29,  81 => 27,  74 => 23,  69 => 21,  64 => 19,  57 => 15,  53 => 14,  48 => 12,  44 => 11,  37 => 7,  33 => 6,  29 => 5,  23 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -293,6 +295,7 @@ class __TwigTemplate_9cac846f39a7d0bbbe8736ac557b1aa12e7b5c8f20525c9159fb2438911
 /* <body>*/
 /* */
 /* {% block body %}*/
+/* */
 /*         {% block nav %}*/
 /*             {{ render(controller('PointWebFicheBundle:Default:nav')) }}*/
 /*         {% endblock %}*/

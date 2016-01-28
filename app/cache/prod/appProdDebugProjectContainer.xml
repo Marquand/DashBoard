@@ -22,17 +22,9 @@
       <parameter key="PointWebAdminBundle">PointWeb\AdminBundle\PointWebAdminBundle</parameter>
       <parameter key="PointWebUserBundle">PointWeb\UserBundle\PointWebUserBundle</parameter>
       <parameter key="PointWebNewsBundle">PointWeb\NewsBundle\PointWebNewsBundle</parameter>
-      <parameter key="PointWebPartnerBundle">PointWeb\PartnerBundle\PointWebPartnerBundle</parameter>
-      <parameter key="PointWebGuestBookBundle">PointWeb\GuestBookBundle\PointWebGuestBookBundle</parameter>
-      <parameter key="PointWebGalleryBundle">PointWeb\GalleryBundle\PointWebGalleryBundle</parameter>
-      <parameter key="PointWebGedBundle">PointWeb\GedBundle\PointWebGedBundle</parameter>
-      <parameter key="PointWebFaqBundle">PointWeb\FaqBundle\PointWebFaqBundle</parameter>
       <parameter key="PointWebProductBundle">PointWeb\ProductBundle\PointWebProductBundle</parameter>
-      <parameter key="PointWebCalendarBundle">PointWeb\CalendarBundle\PointWebCalendarBundle</parameter>
       <parameter key="PointWebReferencingBundle">PointWeb\ReferencingBundle\PointWebReferencingBundle</parameter>
       <parameter key="PointWebPageBundle">PointWeb\PageBundle\PointWebPageBundle</parameter>
-      <parameter key="PointWebPrezBundle">PointWeb\PrezBundle\PointWebPrezBundle</parameter>
-      <parameter key="PointWebVeilleBundle">PointWeb\VeilleBundle\PointWebVeilleBundle</parameter>
       <parameter key="PointWebFicheBundle">PointWeb\FicheBundle\PointWebFicheBundle</parameter>
     </parameter>
     <parameter key="kernel.charset">UTF-8</parameter>
@@ -2042,55 +2034,7 @@
       </call>
       <call method="addResource">
         <argument>xlf</argument>
-        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PartnerBundle/Resources/translations/messages.fr.xlf</argument>
-        <argument>fr</argument>
-        <argument>messages</argument>
-      </call>
-      <call method="addResource">
-        <argument>xlf</argument>
-        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GuestBookBundle/Resources/translations/messages.fr.xlf</argument>
-        <argument>fr</argument>
-        <argument>messages</argument>
-      </call>
-      <call method="addResource">
-        <argument>xlf</argument>
-        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GalleryBundle/Resources/translations/messages.fr.xlf</argument>
-        <argument>fr</argument>
-        <argument>messages</argument>
-      </call>
-      <call method="addResource">
-        <argument>xlf</argument>
-        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GedBundle/Resources/translations/messages.fr.xlf</argument>
-        <argument>fr</argument>
-        <argument>messages</argument>
-      </call>
-      <call method="addResource">
-        <argument>xlf</argument>
-        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FaqBundle/Resources/translations/messages.fr.xlf</argument>
-        <argument>fr</argument>
-        <argument>messages</argument>
-      </call>
-      <call method="addResource">
-        <argument>xlf</argument>
         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ProductBundle/Resources/translations/messages.fr.xlf</argument>
-        <argument>fr</argument>
-        <argument>messages</argument>
-      </call>
-      <call method="addResource">
-        <argument>xlf</argument>
-        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/CalendarBundle/Resources/translations/messages.fr.xlf</argument>
-        <argument>fr</argument>
-        <argument>messages</argument>
-      </call>
-      <call method="addResource">
-        <argument>xlf</argument>
-        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PrezBundle/Resources/translations/messages.fr.xlf</argument>
-        <argument>fr</argument>
-        <argument>messages</argument>
-      </call>
-      <call method="addResource">
-        <argument>xlf</argument>
-        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/VeilleBundle/Resources/translations/messages.fr.xlf</argument>
         <argument>fr</argument>
         <argument>messages</argument>
       </call>
@@ -2887,7 +2831,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>56449521917eb5.06258758</argument>
+            <argument>5697ae80cdcbd8.09656888</argument>
           </service>
         </argument>
       </argument>
@@ -3177,7 +3121,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.context"/>
-            <argument>56449521917eb5.06258758</argument>
+            <argument>5697ae80cdcbd8.09656888</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -3671,16 +3615,9 @@
               <argument key="PointWebAdminBundle">PointWeb\AdminBundle\Entity</argument>
               <argument key="PointWebUserBundle">PointWeb\UserBundle\Entity</argument>
               <argument key="PointWebNewsBundle">PointWeb\NewsBundle\Entity</argument>
-              <argument key="PointWebPartnerBundle">PointWeb\PartnerBundle\Entity</argument>
-              <argument key="PointWebGuestBookBundle">PointWeb\GuestBookBundle\Entity</argument>
-              <argument key="PointWebGalleryBundle">PointWeb\GalleryBundle\Entity</argument>
-              <argument key="PointWebGedBundle">PointWeb\GedBundle\Entity</argument>
-              <argument key="PointWebFaqBundle">PointWeb\FaqBundle\Entity</argument>
               <argument key="PointWebProductBundle">PointWeb\ProductBundle\Entity</argument>
-              <argument key="PointWebCalendarBundle">PointWeb\CalendarBundle\Entity</argument>
               <argument key="PointWebReferencingBundle">PointWeb\ReferencingBundle\Entity</argument>
               <argument key="PointWebPageBundle">PointWeb\PageBundle\Entity</argument>
-              <argument key="PointWebVeilleBundle">PointWeb\VeilleBundle\Entity</argument>
               <argument key="PointWebFicheBundle">PointWeb\FicheBundle\Entity</argument>
             </argument>
           </call>
@@ -3705,16 +3642,9 @@
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AdminBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/UserBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/NewsBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PartnerBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GuestBookBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GalleryBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GedBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FaqBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ProductBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/CalendarBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ReferencingBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PageBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/VeilleBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FicheBundle/Entity</argument>
                       </argument>
                     </service>
@@ -3730,16 +3660,9 @@
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AdminBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/UserBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/NewsBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PartnerBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GuestBookBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GalleryBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GedBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FaqBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ProductBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/CalendarBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ReferencingBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PageBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/VeilleBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FicheBundle/Entity</argument>
                       </argument>
                     </service>
@@ -3755,16 +3678,9 @@
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AdminBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/UserBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/NewsBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PartnerBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GuestBookBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GalleryBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GedBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FaqBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ProductBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/CalendarBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ReferencingBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PageBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/VeilleBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FicheBundle/Entity</argument>
                       </argument>
                     </service>
@@ -3780,16 +3696,9 @@
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AdminBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/UserBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/NewsBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PartnerBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GuestBookBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GalleryBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GedBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FaqBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ProductBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/CalendarBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ReferencingBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PageBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/VeilleBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FicheBundle/Entity</argument>
                       </argument>
                     </service>
@@ -3805,141 +3714,9 @@
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AdminBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/UserBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/NewsBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PartnerBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GuestBookBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GalleryBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GedBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FaqBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ProductBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/CalendarBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ReferencingBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PageBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/VeilleBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FicheBundle/Entity</argument>
-                      </argument>
-                    </service>
-                  </argument>
-                  <argument>PointWeb\PartnerBundle\Entity</argument>
-                </call>
-                <call method="addDriver">
-                  <argument type="service">
-                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
-                      <argument type="service" id="annotation_reader"/>
-                      <argument type="collection">
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AppBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AdminBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/UserBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/NewsBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PartnerBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GuestBookBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GalleryBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GedBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FaqBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ProductBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/CalendarBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ReferencingBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PageBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/VeilleBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FicheBundle/Entity</argument>
-                      </argument>
-                    </service>
-                  </argument>
-                  <argument>PointWeb\GuestBookBundle\Entity</argument>
-                </call>
-                <call method="addDriver">
-                  <argument type="service">
-                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
-                      <argument type="service" id="annotation_reader"/>
-                      <argument type="collection">
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AppBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AdminBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/UserBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/NewsBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PartnerBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GuestBookBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GalleryBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GedBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FaqBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ProductBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/CalendarBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ReferencingBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PageBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/VeilleBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FicheBundle/Entity</argument>
-                      </argument>
-                    </service>
-                  </argument>
-                  <argument>PointWeb\GalleryBundle\Entity</argument>
-                </call>
-                <call method="addDriver">
-                  <argument type="service">
-                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
-                      <argument type="service" id="annotation_reader"/>
-                      <argument type="collection">
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AppBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AdminBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/UserBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/NewsBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PartnerBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GuestBookBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GalleryBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GedBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FaqBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ProductBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/CalendarBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ReferencingBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PageBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/VeilleBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FicheBundle/Entity</argument>
-                      </argument>
-                    </service>
-                  </argument>
-                  <argument>PointWeb\GedBundle\Entity</argument>
-                </call>
-                <call method="addDriver">
-                  <argument type="service">
-                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
-                      <argument type="service" id="annotation_reader"/>
-                      <argument type="collection">
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AppBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AdminBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/UserBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/NewsBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PartnerBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GuestBookBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GalleryBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GedBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FaqBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ProductBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/CalendarBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ReferencingBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PageBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/VeilleBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FicheBundle/Entity</argument>
-                      </argument>
-                    </service>
-                  </argument>
-                  <argument>PointWeb\FaqBundle\Entity</argument>
-                </call>
-                <call method="addDriver">
-                  <argument type="service">
-                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
-                      <argument type="service" id="annotation_reader"/>
-                      <argument type="collection">
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AppBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AdminBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/UserBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/NewsBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PartnerBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GuestBookBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GalleryBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GedBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FaqBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ProductBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/CalendarBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ReferencingBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PageBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/VeilleBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FicheBundle/Entity</argument>
                       </argument>
                     </service>
@@ -3955,41 +3732,9 @@
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AdminBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/UserBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/NewsBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PartnerBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GuestBookBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GalleryBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GedBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FaqBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ProductBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/CalendarBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ReferencingBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PageBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/VeilleBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FicheBundle/Entity</argument>
-                      </argument>
-                    </service>
-                  </argument>
-                  <argument>PointWeb\CalendarBundle\Entity</argument>
-                </call>
-                <call method="addDriver">
-                  <argument type="service">
-                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
-                      <argument type="service" id="annotation_reader"/>
-                      <argument type="collection">
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AppBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AdminBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/UserBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/NewsBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PartnerBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GuestBookBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GalleryBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GedBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FaqBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ProductBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/CalendarBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ReferencingBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PageBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/VeilleBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FicheBundle/Entity</argument>
                       </argument>
                     </service>
@@ -4005,16 +3750,9 @@
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AdminBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/UserBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/NewsBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PartnerBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GuestBookBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GalleryBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GedBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FaqBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ProductBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/CalendarBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ReferencingBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PageBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/VeilleBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FicheBundle/Entity</argument>
                       </argument>
                     </service>
@@ -4030,41 +3768,9 @@
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AdminBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/UserBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/NewsBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PartnerBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GuestBookBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GalleryBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GedBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FaqBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ProductBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/CalendarBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ReferencingBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PageBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/VeilleBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FicheBundle/Entity</argument>
-                      </argument>
-                    </service>
-                  </argument>
-                  <argument>PointWeb\VeilleBundle\Entity</argument>
-                </call>
-                <call method="addDriver">
-                  <argument type="service">
-                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
-                      <argument type="service" id="annotation_reader"/>
-                      <argument type="collection">
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AppBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/AdminBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/UserBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/NewsBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PartnerBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GuestBookBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GalleryBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GedBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FaqBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ProductBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/CalendarBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ReferencingBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PageBundle/Entity</argument>
-                        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/VeilleBundle/Entity</argument>
                         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FicheBundle/Entity</argument>
                       </argument>
                     </service>
@@ -4480,32 +4186,8 @@
         <argument>PointWebNews</argument>
       </call>
       <call method="addPath">
-        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PartnerBundle/Resources/views</argument>
-        <argument>PointWebPartner</argument>
-      </call>
-      <call method="addPath">
-        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GuestBookBundle/Resources/views</argument>
-        <argument>PointWebGuestBook</argument>
-      </call>
-      <call method="addPath">
-        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GalleryBundle/Resources/views</argument>
-        <argument>PointWebGallery</argument>
-      </call>
-      <call method="addPath">
-        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/GedBundle/Resources/views</argument>
-        <argument>PointWebGed</argument>
-      </call>
-      <call method="addPath">
-        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FaqBundle/Resources/views</argument>
-        <argument>PointWebFaq</argument>
-      </call>
-      <call method="addPath">
         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ProductBundle/Resources/views</argument>
         <argument>PointWebProduct</argument>
-      </call>
-      <call method="addPath">
-        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/CalendarBundle/Resources/views</argument>
-        <argument>PointWebCalendar</argument>
       </call>
       <call method="addPath">
         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/ReferencingBundle/Resources/views</argument>
@@ -4514,14 +4196,6 @@
       <call method="addPath">
         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PageBundle/Resources/views</argument>
         <argument>PointWebPage</argument>
-      </call>
-      <call method="addPath">
-        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/PrezBundle/Resources/views</argument>
-        <argument>PointWebPrez</argument>
-      </call>
-      <call method="addPath">
-        <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/VeilleBundle/Resources/views</argument>
-        <argument>PointWebVeille</argument>
       </call>
       <call method="addPath">
         <argument>/Applications/MAMP/htdocs/DashBoard/src/PointWeb/FicheBundle/Resources/views</argument>

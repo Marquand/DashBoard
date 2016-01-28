@@ -2,23 +2,795 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d37ff19-678b-464a-afef-193d2fedab2d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/DashBoard.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1#getCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1#getCreator.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1#getDescription.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1#getEndDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1#getId.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1#getStartDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1#getUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1#preUpdate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1#setCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1#setCreator.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1#setDescription.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1#setEndDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1#setStartDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1#setUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1$createDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1$creator.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1$description.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1$endDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1$id.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1$startDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1$updateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/01dda97335f153f32eabc72357f19d6cbebe07b1.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#__construct.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#addPicture.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#getContent.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#getCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#getEndDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#getId.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#getLink.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#getName.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#getOnline.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#getPictures.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#getPosition.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#getStartDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#getUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#preUpdate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#removePicture.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#setContent.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#setCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#setEndDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#setLink.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#setName.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#setOnline.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#setPosition.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#setStartDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06#setUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06$content.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06$createDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06$endDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06$id.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06$link.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06$name.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06$online.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06$pictures.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06$position.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06$startDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06$updateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0275485c7e5d1db4622d98d28b40c0d22b507c06.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/098112dfdac9cade2f1f703ed2a02ef1efaccaec.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0dcd1c3de02932d5e012fb56a5e1515d6c729684.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/2b28bfcc308b1df0e65836d0400ad0f52d152b2d.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/2f9fea0ef9d31878c8550a6c7521c0ea1f79975c$description.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/2f9fea0ef9d31878c8550a6c7521c0ea1f79975c$h1.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/2f9fea0ef9d31878c8550a6c7521c0ea1f79975c$id.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/2f9fea0ef9d31878c8550a6c7521c0ea1f79975c$photo1.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/2f9fea0ef9d31878c8550a6c7521c0ea1f79975c$photo2.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/2f9fea0ef9d31878c8550a6c7521c0ea1f79975c$photo3.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/2f9fea0ef9d31878c8550a6c7521c0ea1f79975c$reference.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/2f9fea0ef9d31878c8550a6c7521c0ea1f79975c$titre.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/2f9fea0ef9d31878c8550a6c7521c0ea1f79975c$url1.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/2f9fea0ef9d31878c8550a6c7521c0ea1f79975c$url2.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/2f9fea0ef9d31878c8550a6c7521c0ea1f79975c.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266#getAbsolutePath.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266#getDescription.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266#getId.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266#getName.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266#getPosition.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266#getTmpPath.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266#getWebPath.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266#preUpload.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266#removeUpload.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266#setDescription.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266#setName.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266#setPath.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266#setPosition.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266#setTmpPath.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266#upload.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266$description.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266$id.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266$name.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266$path.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266$position.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266$tmpPath.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/34e9c35985c34716b2a7f5985c4a7c9b812e2266.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/36a836cd0527cd966a3b51d2d6aa51fe0e0ef1d0.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/3cce007dd3568820adb55e608289b57c73d24aaf.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/3f9d4d036fd1a3dd446e19fcb402adf70e51003a$childrens.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/3f9d4d036fd1a3dd446e19fcb402adf70e51003a$description.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/3f9d4d036fd1a3dd446e19fcb402adf70e51003a$id.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/3f9d4d036fd1a3dd446e19fcb402adf70e51003a$online.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/3f9d4d036fd1a3dd446e19fcb402adf70e51003a$parent.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/3f9d4d036fd1a3dd446e19fcb402adf70e51003a$pictures.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/3f9d4d036fd1a3dd446e19fcb402adf70e51003a$position.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/3f9d4d036fd1a3dd446e19fcb402adf70e51003a$products.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/3f9d4d036fd1a3dd446e19fcb402adf70e51003a$title.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/3f9d4d036fd1a3dd446e19fcb402adf70e51003a.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/3fbad5fe57dc2234b7d85df0ff329b47261c5471.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/493eac4ee672135cc47531193e34cc946cb2c83f.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/538095c0d1e2b0fe592f41ac89242c03db1f5924.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/551b75a737fd28201054c2296f7c99f8a762731f.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/556c2dc5e8c71f3f058c84ed17d8838a2b16991e.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/64e2c7aea120717c24b36ea52d86199ad7868477.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/6ab8dc70b5525d2d07523c6474c3405f5e460588.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#__construct.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#__toString.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#addChildren.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#addPicture.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#getChildrens.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#getCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#getDescription.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#getId.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#getParent.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#getPath.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#getPictures.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#getPosition.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#getTitle.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#getUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#preUpdate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#removeChildren.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#removePicture.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#setCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#setDescription.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#setParent.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#setPath.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#setPosition.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#setTitle.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#setUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45$childrens.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45$createDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45$description.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45$id.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45$parent.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45$path.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45$pictures.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45$position.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45$title.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45$updateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/70139f350fc59bc4ec83869ec515835d855ffa45.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/72304d109ec5b4b91243f00e30ac7e126df20a19.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/81629c2cf797c41778e99ed940e69463b6da022c.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/8f31549f8c4bce27e510cc90abd60d69399196e8.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced#__construct.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced#getComment.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced#getCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced#getEmail.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced#getFirstname.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced#getId.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced#getLastname.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced#getNotation.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced#getOnline.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced#getPosition.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced#getUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced#preUpdate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced#setComment.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced#setCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced#setEmail.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced#setFirstname.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced#setLastname.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced#setNotation.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced#setOnline.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced#setPosition.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced#setUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced$comment.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced$createDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced$email.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced$firstname.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced$id.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced$lastname.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced$notation.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced$online.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced$position.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced$updateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9640f4cc298c9d749f589feeac34045040ae3ced.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954#getAnswer.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954#getCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954#getId.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954#getOnline.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954#getPosition.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954#getQuestion.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954#getUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954#preUpdate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954#setAnswer.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954#setCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954#setOnline.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954#setPosition.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954#setQuestion.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954#setUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954$answer.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954$createDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954$id.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954$online.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954$position.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954$question.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954$updateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/99b4af13e5f4f4bfd6b0e47788b4058fd4539954.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9bd7029719b53e9dfcae699785d545285a6e1abb.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ab8a92a3b31f40db9349a54cc8620a8a68a58756.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ac00ceeaa40c0c823f6a8224ab81cb07a215725f.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#__construct.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#__toString.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#addPicture.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#getCategory.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#getCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#getDescription.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#getId.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#getOnline.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#getPictures.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#getPosition.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#getPrice.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#getPromotionEndDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#getPromotionPrice.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#getPromotionStartDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#getReference.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#getTitle.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#getUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#getUrlLink.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#preUpdate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#removePicture.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#setCategory.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#setCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#setDescription.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#setOnline.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#setPosition.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#setPrice.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#setPromotionEndDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#setPromotionPrice.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#setPromotionStartDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#setReference.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#setTitle.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#setUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463#setUrlLink.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463$category.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463$createDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463$description.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463$id.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463$online.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463$pictures.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463$position.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463$price.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463$promotionEndDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463$promotionPrice.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463$promotionStartDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463$reference.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463$title.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463$updateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463$urlLink.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad80c0e59a5fb99a576c7ca78c61675bbe712463.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/aebca4f983fe4ec97303d5dd0d46e50380e38b67.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#__toString.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#addGroup.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#addRole.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#eraseCredentials.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getConfirmationToken.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getEmail.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getEmailCanonical.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getGroupNames.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getGroups.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getId.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getLastLogin.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getPassword.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getPasswordRequestedAt.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getPlainPassword.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getRoles.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getSalt.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getUsername.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#getUsernameCanonical.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#hasGroup.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#hasRole.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#isAccountNonExpired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#isAccountNonLocked.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#isCredentialsExpired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#isCredentialsNonExpired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#isEnabled.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#isExpired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#isLocked.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#isPasswordRequestNonExpired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#isSuperAdmin.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#removeGroup.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#removeRole.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#serialize.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setConfirmationToken.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setCredentialsExpireAt.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setCredentialsExpired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setEmail.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setEmailCanonical.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setEnabled.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setExpired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setExpiresAt.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setLastLogin.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setLocked.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setPassword.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setPasswordRequestedAt.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setPlainPassword.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setRoles.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setSuperAdmin.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setUsername.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#setUsernameCanonical.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#unserialize.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$confirmationToken.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$credentialsExpireAt.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$credentialsExpired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$email.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$emailCanonical.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$enabled.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$expired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$expiresAt.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$groups.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$lastLogin.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$locked.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$password.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$passwordRequestedAt.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$plainPassword.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$roles.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$salt.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$usernameCanonical.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/bae26a03d0be8e93ca0ea2f2fc8cde89798e27c8.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/c37717509cb309aa9cf2b75c28c7994e259591a5.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/d16e51d2a574eb9d61fb34173daca5dfc891238b.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/d5ccb8200ac5394ded752a77c8880197097322bf.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dcb5c44896e9a861501bb2c425788b03713c0dee.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf#__construct.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf#addPicture.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf#getCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf#getDescription.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf#getId.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf#getName.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf#getPictures.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf#getPosition.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf#getUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf#preUpdate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf#removePicture.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf#setCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf#setDescription.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf#setName.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf#setPosition.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf#setUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf$createDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf$description.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf$id.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf$name.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf$pictures.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf$position.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf$updateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dce1b3d03c88d7b56a9bf9f840437f906925cccf.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/e9f6c53e91b1883b241d37732852f38819eaadad.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775#__construct.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775#addPicture.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775#addUser.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775#getCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775#getDescription.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775#getId.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775#getName.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775#getPictures.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775#getPosition.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775#getUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775#getUsers.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775#preUpdate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775#removePicture.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775#removeUser.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775#setCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775#setDescription.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775#setName.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775#setPosition.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775#setUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775$createDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775$description.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775$id.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775$name.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775$pictures.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775$position.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775$updateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775$users.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/edeb188a4c40791b1627535dd02dee12ce91c775.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d#__construct.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d#addEvent.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d#addFolder.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d#getCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d#getEvents.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d#getFirstName.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d#getFolders.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d#getFullname.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d#getLastName.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d#getUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d#preUpdate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d#removeEvent.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d#removeFolder.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d#setCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d#setFirstName.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d#setLastName.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d#setUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d$createDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d$events.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d$firstName.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d$folders.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d$id.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d$lastName.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d$updateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d$username.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f016f1db1f2024e12e3f20ab5fe6b96814988a1d.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#getAddress.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#getCity.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#getCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#getEmail.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#getFirstname.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#getId.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#getLastname.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#getMessage.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#getPhone.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#getUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#getZipCode.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#preUpdate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#setAddress.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#setCity.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#setCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#setEmail.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#setFirstname.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#setLastname.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#setMessage.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#setPhone.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#setUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80#setZipCode.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80$address.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80$city.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80$createDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80$email.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80$firstname.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80$id.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80$lastname.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80$message.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80$phone.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80$updateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80$zipCode.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f9e34fefbb63b2eb38556253e916fb11e201ab80.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerCompiler.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/assetic/routing.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/classes.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/07b01785436cbd2fb5f2d375553e5d2ef233cb17#footerAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/07b01785436cbd2fb5f2d375553e5d2ef233cb17#indexAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/07b01785436cbd2fb5f2d375553e5d2ef233cb17#menuAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/07b01785436cbd2fb5f2d375553e5d2ef233cb17.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/0d430b32dfe1d8c5f2421daf02bc9427bef2e4a1#createAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/0d430b32dfe1d8c5f2421daf02bc9427bef2e4a1#newAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/0d430b32dfe1d8c5f2421daf02bc9427bef2e4a1#showAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/2104963400884c89c5728ee1e430fd6d8c24cfd8#detailAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/38f7b61d7629ad7f78afeb64e98ac94ddef54c8d#isAccountNonExpired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/38f7b61d7629ad7f78afeb64e98ac94ddef54c8d#isAccountNonLocked.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/38f7b61d7629ad7f78afeb64e98ac94ddef54c8d#isCredentialsNonExpired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/38f7b61d7629ad7f78afeb64e98ac94ddef54c8d#isEnabled.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/38f7b61d7629ad7f78afeb64e98ac94ddef54c8d.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/6d77c4060d2c46d7db2a54ee9d739c0f7b88bfde#addGroup.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/6d77c4060d2c46d7db2a54ee9d739c0f7b88bfde#getGroupNames.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/6d77c4060d2c46d7db2a54ee9d739c0f7b88bfde#getGroups.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/6d77c4060d2c46d7db2a54ee9d739c0f7b88bfde#hasGroup.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/6d77c4060d2c46d7db2a54ee9d739c0f7b88bfde#removeGroup.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/6d77c4060d2c46d7db2a54ee9d739c0f7b88bfde.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#__construct.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#__toString.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#addChildren.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#addPicture.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#getChildrens.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#getCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#getDescription.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#getId.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#getParent.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#getPath.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#getPictures.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#getPosition.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#getTitle.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#getUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#preUpdate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#removeChildren.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#removePicture.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#setCreateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#setDescription.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#setParent.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#setPath.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#setPosition.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#setTitle.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45#setUpdateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45$childrens.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45$createDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45$description.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45$id.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45$parent.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45$path.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45$pictures.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45$position.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45$title.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45$updateDate.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/70139f350fc59bc4ec83869ec515835d855ffa45.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#addRole.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#getConfirmationToken.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#getEmail.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#getEmailCanonical.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#getId.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#getPlainPassword.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#getUsernameCanonical.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#hasRole.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#isPasswordRequestNonExpired.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#isSuperAdmin.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#removeRole.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setConfirmationToken.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setEmail.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setEmailCanonical.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setEnabled.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setLastLogin.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setLocked.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setPassword.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setPasswordRequestedAt.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setPlainPassword.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setRoles.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setSuperAdmin.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setUsername.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22#setUsernameCanonical.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/98f90e93f1f074bbb6fbd5282284bc0f2486ca22.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f#__construct.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$id.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f$username.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/b52ea85948a1c5b9bb1efeee788d43a2ecdba75f.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/d2e083bdedbbce106cc0e22d2403123bbc4b457c#loginAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/d2e083bdedbbce106cc0e22d2403123bbc4b457c.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/dc1f3c2690cec070768cf5dde8291f16c094e668#serialize.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/dc1f3c2690cec070768cf5dde8291f16c094e668#unserialize.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/dc1f3c2690cec070768cf5dde8291f16c094e668.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/f437686921cc4405ab12403b18cc1c3fd782a5b7#eraseCredentials.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/f437686921cc4405ab12403b18cc1c3fd782a5b7#getPassword.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/f437686921cc4405ab12403b18cc1c3fd782a5b7#getRoles.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/f437686921cc4405ab12403b18cc1c3fd782a5b7#getSalt.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/f437686921cc4405ab12403b18cc1c3fd782a5b7#getUsername.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/f437686921cc4405ab12403b18cc1c3fd782a5b7.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/annotations/fa5ea354e34449d66dc84ff85c4950aaa4da0df2#updateAction.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/secure_random.seed" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/0/0/008e33b150a526e5a0b340dfbb5c4fb8fa3add17faba601e6fd03bfc37a06312.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/0/c/0cf344aedb3379675d3e0a1f740177d09b8800d18b8a379ed7e2bbd590e811f4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/0/c/0cfcd13b8927137bbe72f84494eab6fcbe050ade9588da15e6b89fa30aa35bb1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/1/1/11b248d052ae0eb82624022c2a6c8b812e95d10c63b1b562319ccdd332c9a3ac.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/1/5/15a31fc1e2ca18c6ffa01a7add131eb3c5df0a3a2410fa4ab2cef6135a2a1974.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/1/9/1923278415468e4ea75debd43715452aa85bbfbd55242119227c3fff253109ea.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/1/9/194a0fe0b6cddc7cbc0a7652dba6e90731db72f8ba831c82d7ec632f8f01d553.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/1/b/1b2c9b87189231b370c510dea0702aa66e699eee0eb407842652d1f164bcb944.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/1/d/1d938d790bc8ea7e93ce623ef31859c73dfb9669d533500cd652ed0ad1305894.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/2/9/29f0ef03708dd32c796bc70bb659b6c5051eb7b081d835b52eac90f39eb6522e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/2/9/29f15e1200e1b6ab1ee69877af7b448082649398bedd4ee192721e06c25c3dfd.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/2/b/2bd17207d628f8a74d603c0bb7c64783841f22867cd29bd1d0739b7af4f3157b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/2/f/2f56f34a29bcfc6e3f9dec38f68fcb3490bec395aa239dc2da0fc957d76fd98d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/3/0/3040e29ac97ab22888905dc541969bd89db39496da23c569f1d3bc16fe89524a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/3/3/333a4966ea5fb2f960e09c934a9016a1225f353f31f2ad6e826a9564bc73c074.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/3/9/3959a3badd66fccea874c2bd3ffeefb7cb3a27f5a82d69755f58d5f84a9ccb20.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/4/4/4476df67fa3ae22a3bd8de917cf8270072af34ae39fff49dd7ab31d05b987508.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/4/6/462649e6468c54cb649f47ec6b59384e5f6d4f2e0f546e1bf6c969d47173aa02.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/4/f/4fd2401b4a12aff1c99e68a98890c113258f6639a0ccc5c95ec9a962b18f86b0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/5/3/53ad646c49834edc9e265b04c98d6a56e9ac8d3626bcc9cd8f7e5f142c0ea7cb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/5/a/5ad4fae58ec783cafc94c056888e51c631992a8d4703bc707a2234119a02be51.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/5/e/5e4a62da4d71f8b263aa65a36024ca64fca691efa05aad6f082ca2431c093ea4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/6/1/61e69cbc0dc8df5f13bb831152b031d9a9669f47da6fffc1f381de34b1f90441.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/6/3/63c8f4d5cdabf321f29dc7be6edc836a970fbca54ef2e60f1459138f5052109c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/6/5/65ee672ec46a117263c68dd6f857791c6fc8e3751f80f4a1188c5936804c39a5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/6/6/666a7b0c76c5d7ffc19a7f3b62180c6f6cfad4b10d0fe011479c87cc1d24e8c8.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/7/0/708c6bb657e2e09537799062b92a0c56ab3f7a353fea70489faa5869c78c4e1e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/7/d/7dac60858ccb04d0c10fc32fb8dbbafa7c21b7e15909a028fc29dde60bff95ee.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/8/0/80b1914a1b587a5fbf708a9fb26d6a409ad5e0e07a7c41469cc291dc5e63bf31.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/8/4/8437765b82d61cf9899ac1f61f93a8cf6d4143e22a9b42e6cfc7132ea62e87a1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/8/4/845cd164796106923f1fe9a44941bc338b43af4de565d1610649fffe46640d0d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/8/b/8bbc3010eee248bac105864bdf0dae5ed87d9c28ed394ba1956bb7b0dac38b1d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/9/2/92a471a7759077c49ae2a679000e9441db807e02e313825c4ef446c93c561012.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/9/5/958f276a103f11aaa271d4222323a2fedc4162c0c1bdf3532d46c642d9c63130.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/9/6/9678a8c0b2881e170d5500c08dd306af228df7b706d1972cc6b98b770c644397.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/9/7/97a81d7d8218e64bb7f85891e6f772e273d38452897656d2990c941f4d1b0a7a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/9/9/9945773628d4d17f47730b6b1448555fd989da9427ad65b0a980054ee0a274e6.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/9/a/9a2096bec657c3e98f218c52d2c3cc640155c6fdf0f5e9a7a04bf0a541b273b8.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/a/7/a72c74fca383e8c370ce4d842ddbcff2515a42e0e5806a41a88a46ea36855c07.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/a/8/a82794273ef159a3bda96c0def0204025e087093daa7fa4e38f844f9db5cd388.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/a/a/aa2214522e25d55b443aeb2f3b51238936105bcb44d65873ce14d976dfccfdba.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/b/4/b45b0c9c86b3e7673f26840289c764d09924af9e1c3fd2e213a3e34226079b4f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/b/a/baa5950e8944cbaab9bcb6bc6f55022c2791693e6d703cb4b105ff3c87bdbde9.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/c/7/c76b1c63b18a1e0bf58840f3790417f080b6f72d6b008a3fb30dbffe41621ace.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/c/b/cbe89b7680c7e9fcc2912a3ce5b7506d4a488c9a03cdb71c463cf5dbb3e7c28a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/c/c/cc07c74b6e0feba0e2aea585fd06ffd69d79068f379a2bfb2233607d2bba8a80.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/c/f/cf7bbf87a0aeb4210432fcecc1ce1aa99f26c8385a3101ff3c3a8700b1de4fc7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/d/3/d39ac65f6dc4559a771e7ae42ebc78c40e61dc63f1ec80182e7300f891b1b564.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/e/0/e0698d58b53e30b0f5621c4c9e6dd2202cd169a190337d9de73bfd6329abd305.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/e/2/e21cb810ecca9222e3744896f4d83ef4cfeba96722cdf824708c9db187efba77.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/e/2/e2b70e0cad825bec4e168e9da6fa4897cd401d567473ad4dc5a5d25fe074ff92.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/e/3/e3ac75671e78ff77532ddbbdbda6b1bbc52136d079846873968d46e8c60f3152.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/e/5/e554f11e3a3163127804a8bc3d883a1c1a235dc0e1f666f99a1f394652a207ca.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/e/a/ead0b1928cca46afadaa2f558159384cd432d2f0ea398e890db4d4f2f3b6ffab.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/e/a/eaf5c21c0a7e53e007a25327749c8ccd0b831aeada28a481528bfc25d619beee.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/f/0/f0665373911b232e07826ae78e497707c662d72cb71cac66ac31187700684065.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/f/2/f2a3626cf5b22d77ddf5d7de1cfc733ca8243fe9ebf54248cf5aa9c62e765c6c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/f/2/f2ecc899570d27f0d28683c7062188751546cedef811ead4d1e18192626687b7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/f/6/f6b61CC.tmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/f/6/f6bbe120f94cc9878fc863ed8d7e48221e4ce85a89237a30dcb4f573a9340799.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/f/a/faa4e4bc5598df9ff12b4668aa722ead3931948c4b0c4b40c7fb0ac863d92148.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/prod/twig/f/e/fec08b965771a1e67bca919a18d128742593dc96025d916587e60186e60ff8ac.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/CalendarBundle/Controller/CalendarEventController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/CalendarBundle/Controller/DefaultController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/CalendarBundle/DependencyInjection/Configuration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/CalendarBundle/DependencyInjection/PointWebCalendarExtension.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/CalendarBundle/Entity/CalendarEvent.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/CalendarBundle/Entity/CalendarEventRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/CalendarBundle/Form/CalendarEventType.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/CalendarBundle/PointWebCalendarBundle.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/CalendarBundle/Resources/config/routing.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/CalendarBundle/Resources/config/routing/calendarevent.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/CalendarBundle/Resources/config/services.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/CalendarBundle/Resources/doc/index.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/CalendarBundle/Resources/translations/messages.fr.xlf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/CalendarBundle/Resources/views/CalendarEvent/edit.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/CalendarBundle/Resources/views/CalendarEvent/new.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/CalendarBundle/Resources/views/Default/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/CalendarBundle/Tests/Controller/CalendarEventControllerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/CalendarBundle/Tests/Controller/DefaultControllerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/FaqBundle/Controller/DefaultController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/FaqBundle/Controller/faqController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/FaqBundle/DependencyInjection/Configuration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/FaqBundle/DependencyInjection/PointWebFaqExtension.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/FaqBundle/Entity/faq.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/FaqBundle/Entity/faqRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/FaqBundle/Form/faqType.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/FaqBundle/PointWebFaqBundle.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/FaqBundle/Resources/config/routing.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/FaqBundle/Resources/config/routing/admin_faq.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/FaqBundle/Resources/config/routing/faq.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/FaqBundle/Resources/config/services.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/FaqBundle/Resources/doc/index.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/FaqBundle/Resources/translations/messages.fr.xlf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/FaqBundle/Resources/views/Default/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/FaqBundle/Resources/views/faq/edit.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/FaqBundle/Resources/views/faq/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/FaqBundle/Resources/views/faq/new.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/FaqBundle/Resources/views/faq/show.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/FaqBundle/Tests/Controller/DefaultControllerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/FaqBundle/Tests/Controller/faqControllerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/Controller/DefaultController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/Controller/GalleryController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/DependencyInjection/Configuration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/DependencyInjection/PointWebGalleryExtension.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/Entity/Gallery.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/Entity/GalleryRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/Form/GalleryType.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/PointWebGalleryBundle.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/Resources/config/routing.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/Resources/config/routing/admin_gallery.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/Resources/config/routing/gallery.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/Resources/config/services.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/Resources/doc/index.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/Resources/translations/messages.fr.xlf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/Resources/views/Default/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/Resources/views/Default/show.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/Resources/views/Gallery/edit.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/Resources/views/Gallery/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/Resources/views/Gallery/new.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/Resources/views/Gallery/show.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/Tests/Controller/DefaultControllerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GalleryBundle/Tests/Controller/GalleryControllerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GedBundle/Controller/DefaultController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GedBundle/Controller/FolderController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GedBundle/DependencyInjection/Configuration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GedBundle/DependencyInjection/PointWebGedExtension.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GedBundle/Entity/Folder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GedBundle/Entity/FolderRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GedBundle/Form/FolderType.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GedBundle/PointWebGedBundle.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GedBundle/Resources/config/routing.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GedBundle/Resources/config/routing/admin_folder.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GedBundle/Resources/config/services.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GedBundle/Resources/doc/index.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GedBundle/Resources/translations/messages.fr.xlf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GedBundle/Resources/views/Default/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GedBundle/Resources/views/Folder/edit.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GedBundle/Resources/views/Folder/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GedBundle/Resources/views/Folder/new.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GedBundle/Resources/views/Folder/show.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GedBundle/Tests/Controller/DefaultControllerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GedBundle/Tests/Controller/FolderControllerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GuestBookBundle/Controller/DefaultController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GuestBookBundle/Controller/GuestBookController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GuestBookBundle/DependencyInjection/Configuration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GuestBookBundle/DependencyInjection/PointWebGuestBookExtension.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GuestBookBundle/Entity/GuestBook.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GuestBookBundle/Entity/GuestBookRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GuestBookBundle/Form/GuestBookType.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GuestBookBundle/PointWebGuestBookBundle.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GuestBookBundle/Resources/config/routing.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GuestBookBundle/Resources/config/routing/admin_guestbook.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GuestBookBundle/Resources/config/routing/guestbook.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GuestBookBundle/Resources/config/services.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GuestBookBundle/Resources/doc/index.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GuestBookBundle/Resources/translations/messages.fr.xlf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GuestBookBundle/Resources/views/Default/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GuestBookBundle/Resources/views/GuestBook/edit.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GuestBookBundle/Resources/views/GuestBook/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GuestBookBundle/Resources/views/GuestBook/new.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GuestBookBundle/Resources/views/GuestBook/show.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GuestBookBundle/Tests/Controller/DefaultControllerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/GuestBookBundle/Tests/Controller/GuestBookControllerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/Controller/DefaultController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/Controller/PartnerController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/DependencyInjection/Configuration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/DependencyInjection/PointWebPartnerExtension.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/Entity/Partner.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/Entity/PartnerRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/Form/PartnerType.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/PointWebPartnerBundle.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/Resources/config/routing.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/Resources/config/routing/admin_partner.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/Resources/config/routing/partner.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/Resources/config/services.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/Resources/doc/index.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/Resources/translations/messages.fr.xlf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/Resources/views/Default/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/Resources/views/Default/show.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/Resources/views/Partner/edit.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/Resources/views/Partner/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/Resources/views/Partner/new.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/Resources/views/Partner/show.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/Tests/Controller/DefaultControllerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PartnerBundle/Tests/Controller/PartnerControllerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PrezBundle/Controller/DefaultController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PrezBundle/DependencyInjection/Configuration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PrezBundle/DependencyInjection/PointWebPrezExtension.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PrezBundle/PointWebPrezBundle.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PrezBundle/Resources/config/routing.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PrezBundle/Resources/config/services.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PrezBundle/Resources/doc/index.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PrezBundle/Resources/translations/messages.fr.xlf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PrezBundle/Resources/views/Default/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/PrezBundle/Tests/Controller/DefaultControllerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/VeilleBundle/Controller/ArticleController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/VeilleBundle/Controller/DefaultController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/VeilleBundle/DependencyInjection/Configuration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/VeilleBundle/DependencyInjection/PointWebVeilleExtension.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/VeilleBundle/Entity/Article.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/VeilleBundle/Entity/ArticleRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/VeilleBundle/Form/ArticleType.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/VeilleBundle/PointWebVeilleBundle.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/VeilleBundle/Resources/config/routing.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/VeilleBundle/Resources/config/routing/article.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/VeilleBundle/Resources/config/services.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/VeilleBundle/Resources/doc/index.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/VeilleBundle/Resources/translations/messages.fr.xlf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/VeilleBundle/Resources/views/Article/edit.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/VeilleBundle/Resources/views/Article/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/VeilleBundle/Resources/views/Article/new.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/VeilleBundle/Resources/views/Article/show.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/VeilleBundle/Resources/views/Default/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/VeilleBundle/Tests/Controller/ArticleControllerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PointWeb/VeilleBundle/Tests/Controller/DefaultControllerTest.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/appProdDebugProjectContainer.php" afterPath="$PROJECT_DIR$/app/cache/prod/appProdDebugProjectContainer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/appProdDebugProjectContainer.php.meta" afterPath="$PROJECT_DIR$/app/cache/prod/appProdDebugProjectContainer.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/appProdDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/app/cache/prod/appProdDebugProjectContainer.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/appProdDebugProjectContainerCompiler.log" afterPath="$PROJECT_DIR$/app/cache/prod/appProdDebugProjectContainerCompiler.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/appProdUrlGenerator.php" afterPath="$PROJECT_DIR$/app/cache/prod/appProdUrlGenerator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/appProdUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/app/cache/prod/appProdUrlGenerator.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/appProdUrlMatcher.php" afterPath="$PROJECT_DIR$/app/cache/prod/appProdUrlMatcher.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/appProdUrlMatcher.php.meta" afterPath="$PROJECT_DIR$/app/cache/prod/appProdUrlMatcher.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/classes.php" afterPath="$PROJECT_DIR$/app/cache/prod/classes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/classes.php.meta" afterPath="$PROJECT_DIR$/app/cache/prod/classes.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/translations/catalogue.fr.74ad548a14679603165a68a05f1f6a84f1ab7740.php.meta" afterPath="$PROJECT_DIR$/app/cache/prod/translations/catalogue.fr.74ad548a14679603165a68a05f1f6a84f1ab7740.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/parameters.yml" afterPath="$PROJECT_DIR$/app/config/parameters.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/twig/4/f/4f180456686e9d5c401330accd4e12b3b50a1597b19638d98a23d1ab635bdf73.php" afterPath="$PROJECT_DIR$/app/cache/prod/twig/4/f/4f180456686e9d5c401330accd4e12b3b50a1597b19638d98a23d1ab635bdf73.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/twig/9/c/9c07144a0b85cd44f2b0a6e05820f96d1c901e898508355f774f09d84f5fdf2b.php" afterPath="$PROJECT_DIR$/app/cache/prod/twig/9/c/9c07144a0b85cd44f2b0a6e05820f96d1c901e898508355f774f09d84f5fdf2b.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/prod/twig/9/c/9c471582cfe8ed0bf0366e262688689ad27cb131dedb311cbeddc237de0efb05.php" afterPath="$PROJECT_DIR$/app/cache/prod/twig/9/c/9c471582cfe8ed0bf0366e262688689ad27cb131dedb311cbeddc237de0efb05.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/prod.log" afterPath="$PROJECT_DIR$/app/logs/prod.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PointWeb/AdminBundle/Resources/views/_menu_admin.html.twig" afterPath="$PROJECT_DIR$/src/PointWeb/AdminBundle/Resources/views/_menu_admin.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PointWeb/FicheBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/PointWeb/FicheBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PointWeb/FicheBundle/Controller/FraisController.php" afterPath="$PROJECT_DIR$/src/PointWeb/FicheBundle/Controller/FraisController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PointWeb/FicheBundle/Entity/Frais.php" afterPath="$PROJECT_DIR$/src/PointWeb/FicheBundle/Entity/Frais.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PointWeb/FicheBundle/Form/FraisType.php" afterPath="$PROJECT_DIR$/src/PointWeb/FicheBundle/Form/FraisType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/Frais/new.html.twig" afterPath="$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/Frais/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/_nav.html.twig" afterPath="$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/_nav.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PointWeb/UserBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/PointWeb/UserBundle/Entity/User.php" />
     </list>
     <ignored path="PPE.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,42 +812,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="parameters.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/Frais/new.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="10.166667">
-              <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+            <state vertical-scroll-proportion="-28.125">
+              <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AutreType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Form/AutreType.php">
+      <file leaf-file-name="FraisController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Controller/FraisController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FraisType.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Form/FraisType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44007155">
-              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-              <folding />
+            <state vertical-scroll-proportion="0.43217665">
+              <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
+              <folding>
+                <element signature="e#51#96#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,6 +841,26 @@
       <command text="s doctrine:generate:entity" />
       <command text="s doctrine:schema:update" />
       <command text="s doctrine:generate:crud " />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:crud " />
+      <command text="s doctrine:schema:update --force" />
+      <command text="s doctrine:generate:crud " />
+      <command text="s doctrine:generate:crud PointWebFicheBundle:Fraisfiche" />
+      <command text="s doctrine:generate:crud &quot;PointWebFicheBundle:Fraisfiche&quot;" />
+      <command text="s doctrine:generate:crud entity=&quot;PointWebFicheBundle:Fraisfiche&quot;" />
+      <command text="s generate:doctrine:crud " />
+      <command text="s doctrine:generate:crud " />
+      <command text="s doctrine:generate:crud entity=&quot;PointWebFicheBundle:Fraisfiche&quot;" />
+      <command text="s generate:doctrine:crud " />
+      <command text="s doctrine:generate:crud PointWebFicheBundle:Fichefrais" />
+      <command text="s doctrine:generate:crud entity=&quot;PointWebFicheBundle:Fichefrais&quot;" />
+      <command text="s doctrine:generate:crud entity=PointWebFicheBundle:Fichefrais" />
+      <command text="s doctrine:generate:crud PointWebFicheBundle:Fichefrais" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:schema:update --dump-sql  " />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:entity" />
+      <command text="s generate:bundle" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -98,15 +872,22 @@
         <option value="$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/Frais/index.html.twig" />
         <option value="$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/Frais/show.html.twig" />
         <option value="$PROJECT_DIR$/src/PointWeb/AppBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/PointWeb/FicheBundle/Entity/Autre.php" />
-        <option value="$PROJECT_DIR$/src/PointWeb/FicheBundle/Entity/Frais.php" />
-        <option value="$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/_nav.html.twig" />
-        <option value="$PROJECT_DIR$/src/PointWeb/FicheBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/Frais/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/PointWeb/FicheBundle/Entity/Fichefrais.php" />
+        <option value="$PROJECT_DIR$/src/PointWeb/NewsBundle/Entity/News.php" />
+        <option value="$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/_nav.html.twig" />
+        <option value="$PROJECT_DIR$/src/PointWeb/FicheBundle/Entity/Frais.php" />
+        <option value="$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/PointWeb/FicheBundle/Form/FraisType.php" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/PointWeb/UserBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/PointWeb/AdminBundle/Resources/views/_menu_admin.html.twig" />
+        <option value="$PROJECT_DIR$/src/PointWeb/FicheBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/Frais/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/PointWeb/FicheBundle/Controller/FraisController.php" />
       </list>
     </option>
   </component>
@@ -120,10 +901,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="734" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -150,7 +929,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -167,6 +945,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="DashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -199,6 +1031,128 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="PointWeb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PointWeb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PointWeb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PointWeb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PointWeb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProductBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PointWeb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProductBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,7 +1290,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Form" />
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -354,14 +1308,84 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="FullScreen" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -377,10 +1401,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="23" width="1280" height="734" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25773808" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -392,7 +1416,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3360215" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33200532" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -435,11 +1459,25 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/Frais/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Form/AutreType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -447,7 +1485,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="167" column="25" selection-start-line="167" selection-start-column="25" selection-end-line="167" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -455,7 +1492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -463,9 +1499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="19" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="19" />
-          <folding>
-            <element signature="e#51#108#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -473,7 +1506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="108" selection-start-line="10" selection-start-column="7" selection-end-line="11" selection-end-column="108" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -498,20 +1530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PointWeb/UserBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7974504">
-          <caret line="62" column="15" selection-start-line="62" selection-start-column="15" selection-end-line="62" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PointWeb/ProductBundle/Resources/views/Product/new.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.5352942">
@@ -533,13 +1551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Entity/Autre.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1301653">
-          <caret line="208" column="30" selection-start-line="208" selection-start-column="30" selection-end-line="208" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PointWeb/AppBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -547,18 +1558,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Entity/Frais.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.88429755">
-          <caret line="369" column="5" selection-start-line="369" selection-start-column="5" selection-end-line="369" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/css/sb-admin.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5714286">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -566,7 +1569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5714286">
           <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -574,7 +1576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -588,13 +1589,6 @@
     <entry file="file://$PROJECT_DIR$/web/js/js/bootstrap.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.51785713">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/js/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.06387665">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -620,53 +1614,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="19" />
-          <folding>
-            <element signature="e#51#108#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PointWeb/ProductBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="108" selection-start-line="10" selection-start-column="7" selection-end-line="11" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/_nav.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="167" column="25" selection-start-line="167" selection-start-column="25" selection-end-line="167" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.9583335">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/Autre/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -674,7 +1625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.92833877">
           <caret line="38" column="60" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -682,7 +1632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2931596">
           <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -690,19 +1639,82 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/Frais/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="10.166667">
-          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Form/AutreType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46875">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="22" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/NewsBundle/Entity/NewsRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/NewsBundle/Resources/views/News/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/NewsBundle/Form/NewsType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03348214">
+          <caret line="43" column="14" selection-start-line="30" selection-start-column="12" selection-end-line="43" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/NewsBundle/Entity/News.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.93303573">
+          <caret line="54" column="47" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Entity/Autre.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6316964">
+          <caret line="208" column="30" selection-start-line="208" selection-start-column="30" selection-end-line="208" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/NewsBundle/Resources/views/News/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03348214">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="28" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Form/FraisType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-31.875">
+          <caret line="53" column="67" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/_nav.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="112" column="20" selection-start-line="112" selection-start-column="20" selection-end-line="112" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -710,11 +1722,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Form/FraisType.php">
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44007155">
-          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.100946374">
+          <caret line="53" column="7" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
+          <folding>
+            <marker date="1447427409000" expanded="true" signature="1578:1623" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Entity/Frais.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5833333">
+          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.375">
+          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/UserBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1955836">
+          <caret line="26" column="77" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.01577287">
+          <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/AdminBundle/Resources/views/_menu_admin.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66246057">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Controller/AutreController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/Default/detail.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/UserBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7564935">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="e#46#94#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37974682">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/ProductBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Resources/views/Frais/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.125">
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PointWeb/FicheBundle/Controller/FraisController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43217665">
+          <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
+          <folding>
+            <element signature="e#51#96#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

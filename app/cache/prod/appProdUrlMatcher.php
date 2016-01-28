@@ -160,76 +160,6 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
 
         }
 
-        if (0 === strpos($pathinfo, '/admin/veille')) {
-            // article
-            if (rtrim($pathinfo, '/') === '/admin/veille') {
-                if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'article');
-                }
-
-                return array (  '_controller' => 'PointWeb\\VeilleBundle\\Controller\\ArticleController::indexAction',  '_route' => 'article',);
-            }
-
-            // article_show
-            if (preg_match('#^/admin/veille/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'article_show')), array (  '_controller' => 'PointWeb\\VeilleBundle\\Controller\\ArticleController::showAction',));
-            }
-
-            // article_new
-            if ($pathinfo === '/admin/veille/new') {
-                return array (  '_controller' => 'PointWeb\\VeilleBundle\\Controller\\ArticleController::newAction',  '_route' => 'article_new',);
-            }
-
-            // article_create
-            if ($pathinfo === '/admin/veille/create') {
-                if ($this->context->getMethod() != 'POST') {
-                    $allow[] = 'POST';
-                    goto not_article_create;
-                }
-
-                return array (  '_controller' => 'PointWeb\\VeilleBundle\\Controller\\ArticleController::createAction',  '_route' => 'article_create',);
-            }
-            not_article_create:
-
-            // article_edit
-            if (preg_match('#^/admin/veille/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'article_edit')), array (  '_controller' => 'PointWeb\\VeilleBundle\\Controller\\ArticleController::editAction',));
-            }
-
-            // article_update
-            if (preg_match('#^/admin/veille/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
-                if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
-                    $allow = array_merge($allow, array('POST', 'PUT'));
-                    goto not_article_update;
-                }
-
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'article_update')), array (  '_controller' => 'PointWeb\\VeilleBundle\\Controller\\ArticleController::updateAction',));
-            }
-            not_article_update:
-
-            // article_delete
-            if (preg_match('#^/admin/veille/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
-                if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
-                    $allow = array_merge($allow, array('POST', 'DELETE'));
-                    goto not_article_delete;
-                }
-
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'article_delete')), array (  '_controller' => 'PointWeb\\VeilleBundle\\Controller\\ArticleController::deleteAction',));
-            }
-            not_article_delete:
-
-        }
-
-        // point_web_veille
-        if ($pathinfo === '/veille') {
-            return array (  '_controller' => 'PointWeb\\VeilleBundle\\Controller\\DefaultController::indexAction',  '_route' => 'point_web_veille',);
-        }
-
-        // point_web_prez
-        if ($pathinfo === '/presentation') {
-            return array (  '_controller' => 'PointWeb\\PrezBundle\\Controller\\DefaultController::indexAction',  '_route' => 'point_web_prez',);
-        }
-
         if (0 === strpos($pathinfo, '/admin/page')) {
             // admin_page
             if (rtrim($pathinfo, '/') === '/admin/page') {
@@ -405,154 +335,74 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
 
             }
 
-            if (0 === strpos($pathinfo, '/admin/ca')) {
-                if (0 === strpos($pathinfo, '/admin/calendar')) {
-                    if (0 === strpos($pathinfo, '/admin/calendarevent')) {
-                        // admin_calendarevent
-                        if (rtrim($pathinfo, '/') === '/admin/calendarevent') {
-                            if (substr($pathinfo, -1) !== '/') {
-                                return $this->redirect($pathinfo.'/', 'admin_calendarevent');
-                            }
-
-                            return array (  '_controller' => 'PointWeb\\CalendarBundle\\Controller\\CalendarEventController::indexAction',  '_route' => 'admin_calendarevent',);
-                        }
-
-                        // admin_calendarevent_show
-                        if (preg_match('#^/admin/calendarevent/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
-                            return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_calendarevent_show')), array (  '_controller' => 'PointWeb\\CalendarBundle\\Controller\\CalendarEventController::showAction',));
-                        }
-
-                        // admin_calendarevent_new
-                        if ($pathinfo === '/admin/calendarevent/new') {
-                            return array (  '_controller' => 'PointWeb\\CalendarBundle\\Controller\\CalendarEventController::newAction',  '_route' => 'admin_calendarevent_new',);
-                        }
-
-                        // admin_calendarevent_create
-                        if ($pathinfo === '/admin/calendarevent/create') {
-                            if ($this->context->getMethod() != 'POST') {
-                                $allow[] = 'POST';
-                                goto not_admin_calendarevent_create;
-                            }
-
-                            return array (  '_controller' => 'PointWeb\\CalendarBundle\\Controller\\CalendarEventController::createAction',  '_route' => 'admin_calendarevent_create',);
-                        }
-                        not_admin_calendarevent_create:
-
-                        // admin_calendarevent_edit
-                        if (preg_match('#^/admin/calendarevent/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
-                            return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_calendarevent_edit')), array (  '_controller' => 'PointWeb\\CalendarBundle\\Controller\\CalendarEventController::editAction',));
-                        }
-
-                        // admin_calendarevent_update
-                        if (preg_match('#^/admin/calendarevent/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
-                            if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
-                                $allow = array_merge($allow, array('POST', 'PUT'));
-                                goto not_admin_calendarevent_update;
-                            }
-
-                            return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_calendarevent_update')), array (  '_controller' => 'PointWeb\\CalendarBundle\\Controller\\CalendarEventController::updateAction',));
-                        }
-                        not_admin_calendarevent_update:
-
-                        // admin_calendarevent_delete
-                        if (preg_match('#^/admin/calendarevent/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
-                            if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
-                                $allow = array_merge($allow, array('POST', 'DELETE'));
-                                goto not_admin_calendarevent_delete;
-                            }
-
-                            return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_calendarevent_delete')), array (  '_controller' => 'PointWeb\\CalendarBundle\\Controller\\CalendarEventController::deleteAction',));
-                        }
-                        not_admin_calendarevent_delete:
-
+            if (0 === strpos($pathinfo, '/admin/category')) {
+                // admin_category
+                if (rtrim($pathinfo, '/') === '/admin/category') {
+                    if (substr($pathinfo, -1) !== '/') {
+                        return $this->redirect($pathinfo.'/', 'admin_category');
                     }
 
-                    // point_web_calendar_admin
-                    if (preg_match('#^/admin/calendar/(?P<year>[^/]++)$#s', $pathinfo, $matches)) {
-                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'point_web_calendar_admin')), array (  '_controller' => 'PointWeb\\CalendarBundle\\Controller\\DefaultController::indexAction',));
-                    }
-
-                    // point_web_calendar_admin_reroute
-                    if (rtrim($pathinfo, '/') === '/admin/calendar') {
-                        if (substr($pathinfo, -1) !== '/') {
-                            return $this->redirect($pathinfo.'/', 'point_web_calendar_admin_reroute');
-                        }
-
-                        return array (  '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\RedirectController::redirectAction',  'route' => 'point_web_calendar_admin',  'permanent' => true,  'year' => 0,  '_route' => 'point_web_calendar_admin_reroute',);
-                    }
-
+                    return array (  '_controller' => 'PointWeb\\ProductBundle\\Controller\\CategoryController::indexAction',  '_route' => 'admin_category',);
                 }
 
-                if (0 === strpos($pathinfo, '/admin/category')) {
-                    // admin_category
-                    if (rtrim($pathinfo, '/') === '/admin/category') {
-                        if (substr($pathinfo, -1) !== '/') {
-                            return $this->redirect($pathinfo.'/', 'admin_category');
-                        }
-
-                        return array (  '_controller' => 'PointWeb\\ProductBundle\\Controller\\CategoryController::indexAction',  '_route' => 'admin_category',);
-                    }
-
-                    // admin_category_show
-                    if (preg_match('#^/admin/category/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
-                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_category_show')), array (  '_controller' => 'PointWeb\\ProductBundle\\Controller\\CategoryController::showAction',));
-                    }
-
-                    // admin_category_new
-                    if ($pathinfo === '/admin/category/new') {
-                        return array (  '_controller' => 'PointWeb\\ProductBundle\\Controller\\CategoryController::newAction',  '_route' => 'admin_category_new',);
-                    }
-
-                    // admin_category_create
-                    if ($pathinfo === '/admin/category/create') {
-                        if ($this->context->getMethod() != 'POST') {
-                            $allow[] = 'POST';
-                            goto not_admin_category_create;
-                        }
-
-                        return array (  '_controller' => 'PointWeb\\ProductBundle\\Controller\\CategoryController::createAction',  '_route' => 'admin_category_create',);
-                    }
-                    not_admin_category_create:
-
-                    // admin_category_edit
-                    if (preg_match('#^/admin/category/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
-                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_category_edit')), array (  '_controller' => 'PointWeb\\ProductBundle\\Controller\\CategoryController::editAction',));
-                    }
-
-                    // admin_category_update
-                    if (preg_match('#^/admin/category/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
-                        if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
-                            $allow = array_merge($allow, array('POST', 'PUT'));
-                            goto not_admin_category_update;
-                        }
-
-                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_category_update')), array (  '_controller' => 'PointWeb\\ProductBundle\\Controller\\CategoryController::updateAction',));
-                    }
-                    not_admin_category_update:
-
-                    // admin_category_delete
-                    if (preg_match('#^/admin/category/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
-                        if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
-                            $allow = array_merge($allow, array('POST', 'DELETE'));
-                            goto not_admin_category_delete;
-                        }
-
-                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_category_delete')), array (  '_controller' => 'PointWeb\\ProductBundle\\Controller\\CategoryController::deleteAction',));
-                    }
-                    not_admin_category_delete:
-
-                    // admin_category_submenu
-                    if (0 === strpos($pathinfo, '/admin/category/submenu') && preg_match('#^/admin/category/submenu/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                        if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                            $allow = array_merge($allow, array('GET', 'HEAD'));
-                            goto not_admin_category_submenu;
-                        }
-
-                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_category_submenu')), array (  '_controller' => 'PointWeb\\ProductBundle\\Controller\\CategoryController::subMenuAction',));
-                    }
-                    not_admin_category_submenu:
-
+                // admin_category_show
+                if (preg_match('#^/admin/category/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_category_show')), array (  '_controller' => 'PointWeb\\ProductBundle\\Controller\\CategoryController::showAction',));
                 }
+
+                // admin_category_new
+                if ($pathinfo === '/admin/category/new') {
+                    return array (  '_controller' => 'PointWeb\\ProductBundle\\Controller\\CategoryController::newAction',  '_route' => 'admin_category_new',);
+                }
+
+                // admin_category_create
+                if ($pathinfo === '/admin/category/create') {
+                    if ($this->context->getMethod() != 'POST') {
+                        $allow[] = 'POST';
+                        goto not_admin_category_create;
+                    }
+
+                    return array (  '_controller' => 'PointWeb\\ProductBundle\\Controller\\CategoryController::createAction',  '_route' => 'admin_category_create',);
+                }
+                not_admin_category_create:
+
+                // admin_category_edit
+                if (preg_match('#^/admin/category/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_category_edit')), array (  '_controller' => 'PointWeb\\ProductBundle\\Controller\\CategoryController::editAction',));
+                }
+
+                // admin_category_update
+                if (preg_match('#^/admin/category/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
+                        $allow = array_merge($allow, array('POST', 'PUT'));
+                        goto not_admin_category_update;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_category_update')), array (  '_controller' => 'PointWeb\\ProductBundle\\Controller\\CategoryController::updateAction',));
+                }
+                not_admin_category_update:
+
+                // admin_category_delete
+                if (preg_match('#^/admin/category/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
+                        $allow = array_merge($allow, array('POST', 'DELETE'));
+                        goto not_admin_category_delete;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_category_delete')), array (  '_controller' => 'PointWeb\\ProductBundle\\Controller\\CategoryController::deleteAction',));
+                }
+                not_admin_category_delete:
+
+                // admin_category_submenu
+                if (0 === strpos($pathinfo, '/admin/category/submenu') && preg_match('#^/admin/category/submenu/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'HEAD'));
+                        goto not_admin_category_submenu;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_category_submenu')), array (  '_controller' => 'PointWeb\\ProductBundle\\Controller\\CategoryController::subMenuAction',));
+                }
+                not_admin_category_submenu:
 
             }
 
@@ -641,396 +491,6 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
             // product_show
             if (preg_match('#^/product/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'product_show')), array (  '_controller' => 'PointWeb\\ProductBundle\\Controller\\DefaultController::showAction',));
-            }
-
-        }
-
-        if (0 === strpos($pathinfo, '/admin/f')) {
-            if (0 === strpos($pathinfo, '/admin/folder')) {
-                // admin_folder
-                if (rtrim($pathinfo, '/') === '/admin/folder') {
-                    if (substr($pathinfo, -1) !== '/') {
-                        return $this->redirect($pathinfo.'/', 'admin_folder');
-                    }
-
-                    return array (  '_controller' => 'PointWeb\\GedBundle\\Controller\\FolderController::indexAction',  '_route' => 'admin_folder',);
-                }
-
-                // admin_folder_show
-                if (preg_match('#^/admin/folder/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_folder_show')), array (  '_controller' => 'PointWeb\\GedBundle\\Controller\\FolderController::showAction',));
-                }
-
-                // admin_folder_new
-                if ($pathinfo === '/admin/folder/new') {
-                    return array (  '_controller' => 'PointWeb\\GedBundle\\Controller\\FolderController::newAction',  '_route' => 'admin_folder_new',);
-                }
-
-                // admin_folder_create
-                if ($pathinfo === '/admin/folder/create') {
-                    if ($this->context->getMethod() != 'POST') {
-                        $allow[] = 'POST';
-                        goto not_admin_folder_create;
-                    }
-
-                    return array (  '_controller' => 'PointWeb\\GedBundle\\Controller\\FolderController::createAction',  '_route' => 'admin_folder_create',);
-                }
-                not_admin_folder_create:
-
-                // admin_folder_edit
-                if (preg_match('#^/admin/folder/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_folder_edit')), array (  '_controller' => 'PointWeb\\GedBundle\\Controller\\FolderController::editAction',));
-                }
-
-                // admin_folder_update
-                if (preg_match('#^/admin/folder/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
-                    if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
-                        $allow = array_merge($allow, array('POST', 'PUT'));
-                        goto not_admin_folder_update;
-                    }
-
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_folder_update')), array (  '_controller' => 'PointWeb\\GedBundle\\Controller\\FolderController::updateAction',));
-                }
-                not_admin_folder_update:
-
-                // admin_folder_delete
-                if (preg_match('#^/admin/folder/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
-                    if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
-                        $allow = array_merge($allow, array('POST', 'DELETE'));
-                        goto not_admin_folder_delete;
-                    }
-
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_folder_delete')), array (  '_controller' => 'PointWeb\\GedBundle\\Controller\\FolderController::deleteAction',));
-                }
-                not_admin_folder_delete:
-
-                // admin_folder_sort
-                if (preg_match('#^/admin/folder/(?P<id>[^/]++)/sort$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_folder_sort')), array (  '_controller' => 'PointWeb\\GedBundle\\Controller\\FolderController::sortAction',));
-                }
-
-            }
-
-            if (0 === strpos($pathinfo, '/admin/faq')) {
-                // admin_faq
-                if (rtrim($pathinfo, '/') === '/admin/faq') {
-                    if (substr($pathinfo, -1) !== '/') {
-                        return $this->redirect($pathinfo.'/', 'admin_faq');
-                    }
-
-                    return array (  '_controller' => 'PointWeb\\FaqBundle\\Controller\\faqController::indexAction',  '_route' => 'admin_faq',);
-                }
-
-                // admin_faq_show
-                if (preg_match('#^/admin/faq/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_faq_show')), array (  '_controller' => 'PointWeb\\FaqBundle\\Controller\\faqController::showAction',));
-                }
-
-                // admin_faq_new
-                if ($pathinfo === '/admin/faq/new') {
-                    return array (  '_controller' => 'PointWeb\\FaqBundle\\Controller\\faqController::newAction',  '_route' => 'admin_faq_new',);
-                }
-
-                // admin_faq_create
-                if ($pathinfo === '/admin/faq/create') {
-                    if ($this->context->getMethod() != 'POST') {
-                        $allow[] = 'POST';
-                        goto not_admin_faq_create;
-                    }
-
-                    return array (  '_controller' => 'PointWeb\\FaqBundle\\Controller\\faqController::createAction',  '_route' => 'admin_faq_create',);
-                }
-                not_admin_faq_create:
-
-                // admin_faq_edit
-                if (preg_match('#^/admin/faq/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_faq_edit')), array (  '_controller' => 'PointWeb\\FaqBundle\\Controller\\faqController::editAction',));
-                }
-
-                // admin_faq_update
-                if (preg_match('#^/admin/faq/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
-                    if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
-                        $allow = array_merge($allow, array('POST', 'PUT'));
-                        goto not_admin_faq_update;
-                    }
-
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_faq_update')), array (  '_controller' => 'PointWeb\\FaqBundle\\Controller\\faqController::updateAction',));
-                }
-                not_admin_faq_update:
-
-                // admin_faq_delete
-                if (preg_match('#^/admin/faq/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
-                    if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
-                        $allow = array_merge($allow, array('POST', 'DELETE'));
-                        goto not_admin_faq_delete;
-                    }
-
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_faq_delete')), array (  '_controller' => 'PointWeb\\FaqBundle\\Controller\\faqController::deleteAction',));
-                }
-                not_admin_faq_delete:
-
-                // admin_faq_sort
-                if (preg_match('#^/admin/faq/(?P<id>[^/]++)/sort$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_faq_sort')), array (  '_controller' => 'PointWeb\\FaqBundle\\Controller\\FaqController::sortAction',));
-                }
-
-            }
-
-        }
-
-        // faq
-        if (rtrim($pathinfo, '/') === '/faq') {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'faq');
-            }
-
-            return array (  '_controller' => 'PointWeb\\FaqBundle\\Controller\\DefaultController::indexAction',  '_route' => 'faq',);
-        }
-
-        if (0 === strpos($pathinfo, '/admin/gallery')) {
-            // admin_gallery
-            if (rtrim($pathinfo, '/') === '/admin/gallery') {
-                if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'admin_gallery');
-                }
-
-                return array (  '_controller' => 'PointWeb\\GalleryBundle\\Controller\\GalleryController::indexAction',  '_route' => 'admin_gallery',);
-            }
-
-            // admin_gallery_show
-            if (preg_match('#^/admin/gallery/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_gallery_show')), array (  '_controller' => 'PointWeb\\GalleryBundle\\Controller\\GalleryController::showAction',));
-            }
-
-            // admin_gallery_new
-            if ($pathinfo === '/admin/gallery/new') {
-                return array (  '_controller' => 'PointWeb\\GalleryBundle\\Controller\\GalleryController::newAction',  '_route' => 'admin_gallery_new',);
-            }
-
-            // admin_gallery_create
-            if ($pathinfo === '/admin/gallery/create') {
-                if ($this->context->getMethod() != 'POST') {
-                    $allow[] = 'POST';
-                    goto not_admin_gallery_create;
-                }
-
-                return array (  '_controller' => 'PointWeb\\GalleryBundle\\Controller\\GalleryController::createAction',  '_route' => 'admin_gallery_create',);
-            }
-            not_admin_gallery_create:
-
-            // admin_gallery_edit
-            if (preg_match('#^/admin/gallery/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_gallery_edit')), array (  '_controller' => 'PointWeb\\GalleryBundle\\Controller\\GalleryController::editAction',));
-            }
-
-            // admin_gallery_update
-            if (preg_match('#^/admin/gallery/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
-                if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
-                    $allow = array_merge($allow, array('POST', 'PUT'));
-                    goto not_admin_gallery_update;
-                }
-
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_gallery_update')), array (  '_controller' => 'PointWeb\\GalleryBundle\\Controller\\GalleryController::updateAction',));
-            }
-            not_admin_gallery_update:
-
-            // admin_gallery_delete
-            if (preg_match('#^/admin/gallery/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
-                if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
-                    $allow = array_merge($allow, array('POST', 'DELETE'));
-                    goto not_admin_gallery_delete;
-                }
-
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_gallery_delete')), array (  '_controller' => 'PointWeb\\GalleryBundle\\Controller\\GalleryController::deleteAction',));
-            }
-            not_admin_gallery_delete:
-
-            // admin_gallery_sort
-            if (preg_match('#^/admin/gallery/(?P<id>[^/]++)/sort$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_gallery_sort')), array (  '_controller' => 'PointWeb\\GalleryBundle\\Controller\\GalleryController::sortAction',));
-            }
-
-        }
-
-        if (0 === strpos($pathinfo, '/gallery')) {
-            // gallery
-            if (rtrim($pathinfo, '/') === '/gallery') {
-                if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'gallery');
-                }
-
-                return array (  '_controller' => 'PointWeb\\GalleryBundle\\Controller\\DefaultController::indexAction',  '_route' => 'gallery',);
-            }
-
-            // gallery_show
-            if (preg_match('#^/gallery/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'gallery_show')), array (  '_controller' => 'PointWeb\\GalleryBundle\\Controller\\DefaultController::showAction',));
-            }
-
-        }
-
-        if (0 === strpos($pathinfo, '/admin/guestbook')) {
-            // admin_guestbook
-            if (rtrim($pathinfo, '/') === '/admin/guestbook') {
-                if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'admin_guestbook');
-                }
-
-                return array (  '_controller' => 'PointWeb\\GuestBookBundle\\Controller\\GuestBookController::indexAction',  '_route' => 'admin_guestbook',);
-            }
-
-            // admin_guestbook_show
-            if (preg_match('#^/admin/guestbook/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_guestbook_show')), array (  '_controller' => 'PointWeb\\GuestBookBundle\\Controller\\GuestBookController::showAction',));
-            }
-
-            // admin_guestbook_new
-            if ($pathinfo === '/admin/guestbook/new') {
-                return array (  '_controller' => 'PointWeb\\GuestBookBundle\\Controller\\GuestBookController::newAction',  '_route' => 'admin_guestbook_new',);
-            }
-
-            // admin_guestbook_create
-            if ($pathinfo === '/admin/guestbook/create') {
-                if ($this->context->getMethod() != 'POST') {
-                    $allow[] = 'POST';
-                    goto not_admin_guestbook_create;
-                }
-
-                return array (  '_controller' => 'PointWeb\\GuestBookBundle\\Controller\\GuestBookController::createAction',  '_route' => 'admin_guestbook_create',);
-            }
-            not_admin_guestbook_create:
-
-            // admin_guestbook_edit
-            if (preg_match('#^/admin/guestbook/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_guestbook_edit')), array (  '_controller' => 'PointWeb\\GuestBookBundle\\Controller\\GuestBookController::editAction',));
-            }
-
-            // admin_guestbook_update
-            if (preg_match('#^/admin/guestbook/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
-                if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
-                    $allow = array_merge($allow, array('POST', 'PUT'));
-                    goto not_admin_guestbook_update;
-                }
-
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_guestbook_update')), array (  '_controller' => 'PointWeb\\GuestBookBundle\\Controller\\GuestBookController::updateAction',));
-            }
-            not_admin_guestbook_update:
-
-            // admin_guestbook_delete
-            if (preg_match('#^/admin/guestbook/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
-                if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
-                    $allow = array_merge($allow, array('POST', 'DELETE'));
-                    goto not_admin_guestbook_delete;
-                }
-
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_guestbook_delete')), array (  '_controller' => 'PointWeb\\GuestBookBundle\\Controller\\GuestBookController::deleteAction',));
-            }
-            not_admin_guestbook_delete:
-
-            // admin_guestbook_sort
-            if (preg_match('#^/admin/guestbook/(?P<id>[^/]++)/sort$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_guestbook_sort')), array (  '_controller' => 'PointWeb\\GuestBookBundle\\Controller\\GuestBookController::sortAction',));
-            }
-
-        }
-
-        if (0 === strpos($pathinfo, '/guestbook')) {
-            // guestbook
-            if (rtrim($pathinfo, '/') === '/guestbook') {
-                if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'guestbook');
-                }
-
-                return array (  '_controller' => 'PointWeb\\GuestBookBundle\\Controller\\DefaultController::indexAction',  '_route' => 'guestbook',);
-            }
-
-            // guestbook_create
-            if ($pathinfo === '/guestbook/create') {
-                if ($this->context->getMethod() != 'POST') {
-                    $allow[] = 'POST';
-                    goto not_guestbook_create;
-                }
-
-                return array (  '_controller' => 'PointWeb\\GuestBookBundle\\Controller\\DefaultController::createAction',  '_route' => 'guestbook_create',);
-            }
-            not_guestbook_create:
-
-        }
-
-        if (0 === strpos($pathinfo, '/admin/partner')) {
-            // admin_partner
-            if (preg_match('#^/admin/partner/(?P<page>[^/]++)/list$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_partner')), array (  '_controller' => 'PointWeb\\PartnerBundle\\Controller\\PartnerController::indexAction',  'page' => 1,));
-            }
-
-            // admin_partner_show
-            if (preg_match('#^/admin/partner/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_partner_show')), array (  '_controller' => 'PointWeb\\PartnerBundle\\Controller\\PartnerController::showAction',));
-            }
-
-            // admin_partner_new
-            if ($pathinfo === '/admin/partner/new') {
-                return array (  '_controller' => 'PointWeb\\PartnerBundle\\Controller\\PartnerController::newAction',  '_route' => 'admin_partner_new',);
-            }
-
-            // admin_partner_create
-            if ($pathinfo === '/admin/partner/create') {
-                if ($this->context->getMethod() != 'POST') {
-                    $allow[] = 'POST';
-                    goto not_admin_partner_create;
-                }
-
-                return array (  '_controller' => 'PointWeb\\PartnerBundle\\Controller\\PartnerController::createAction',  '_route' => 'admin_partner_create',);
-            }
-            not_admin_partner_create:
-
-            // admin_partner_edit
-            if (preg_match('#^/admin/partner/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_partner_edit')), array (  '_controller' => 'PointWeb\\PartnerBundle\\Controller\\PartnerController::editAction',));
-            }
-
-            // admin_partner_update
-            if (preg_match('#^/admin/partner/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
-                if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
-                    $allow = array_merge($allow, array('POST', 'PUT'));
-                    goto not_admin_partner_update;
-                }
-
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_partner_update')), array (  '_controller' => 'PointWeb\\PartnerBundle\\Controller\\PartnerController::updateAction',));
-            }
-            not_admin_partner_update:
-
-            // admin_partner_delete
-            if (preg_match('#^/admin/partner/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
-                if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
-                    $allow = array_merge($allow, array('POST', 'DELETE'));
-                    goto not_admin_partner_delete;
-                }
-
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_partner_delete')), array (  '_controller' => 'PointWeb\\PartnerBundle\\Controller\\PartnerController::deleteAction',));
-            }
-            not_admin_partner_delete:
-
-            // admin_partner_sort
-            if (preg_match('#^/admin/partner/(?P<id>[^/]++)/sort$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_partner_sort')), array (  '_controller' => 'PointWeb\\PartnerBundle\\Controller\\PartnerController::sortAction',));
-            }
-
-        }
-
-        if (0 === strpos($pathinfo, '/partner')) {
-            // partner
-            if (rtrim($pathinfo, '/') === '/partner') {
-                if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'partner');
-                }
-
-                return array (  '_controller' => 'PointWeb\\PartnerBundle\\Controller\\DefaultController::indexAction',  '_route' => 'partner',);
-            }
-
-            // partner_show
-            if (preg_match('#^/partner/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'partner_show')), array (  '_controller' => 'PointWeb\\PartnerBundle\\Controller\\DefaultController::showAction',));
             }
 
         }
